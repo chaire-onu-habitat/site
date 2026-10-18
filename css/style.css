@@ -5178,8 +5178,9 @@ body.pdf-sans-defilement { overflow: hidden; }
 
 /* Pages créées : écart réduit entre la fin du contenu et le bloc
    « Personnes, projets et partenaires » (80 px au lieu des marges cumulées) */
-.bloc:has(+ .bloc--liens) > .site-section:not(.bloc--gris):not(.site-section--dark),
-.bloc:has(+ .isci-ajout + .bloc--liens) > .site-section:not(.bloc--gris):not(.site-section--dark) {
+/* (bloc des liens vide : section masquée, sans effet sur l'écart) */
+.bloc:has(+ .bloc--liens:not(:has(> section[hidden]))) > .site-section:not(.bloc--gris):not(.site-section--dark),
+.bloc:has(+ .isci-ajout + .bloc--liens:not(:has(> section[hidden]))) > .site-section:not(.bloc--gris):not(.site-section--dark) {
   padding-bottom: 0;
 }
 
@@ -5194,4 +5195,78 @@ body.pdf-sans-defilement { overflow: hidden; }
 
 .bloc--liens .page-libre__liens > .pt-groupe:first-child {
   margin-top: 0;
+}
+
+
+/* #####################################################################
+   Dernier bloc d'une page (sans personnes, projets ni actualités après
+   lui) : marge sous le contenu, pour que le pied de page (ou, sur
+   téléphone, le menu latéral placé en fin de page) ne soit pas collé
+   au dernier bloc. Les blocs vides (section masquée) ne comptent pas.
+   ##################################################################### */
+:root {
+  --marge-fin-page: 72px;
+}
+
+.blocs:not(.fiche__blocs) > .bloc:not(:has(> section[hidden])):not(:has(~ .bloc:not(:has(> section[hidden])))) > .site-section:not(.bloc--gris):not(.site-section--dark) {
+  padding-bottom: var(--marge-fin-page);
+}
+
+/* #####################################################################
+   Téléphone et tablette : une seule marge latérale (gouttière) pour
+   l'en-tête, le contenu, le menu latéral et le pied de page, afin que
+   tout soit aligné ; le choix de la langue est collé à droite, à la
+   même distance du bord que le contenu.
+   ##################################################################### */
+@media (max-width: 900px) {
+  :root {
+    --gouttiere: 24px;
+    --marge-fin-page: 56px;
+  }
+
+  .header,
+  .site-section,
+  .page-volet__principal .site-section,
+  .footer-container {
+    padding-left: var(--gouttiere);
+    padding-right: var(--gouttiere);
+  }
+
+  .page-volet__cote {
+    padding-left: var(--gouttiere);
+    padding-right: var(--gouttiere);
+  }
+
+  /* Sections imbriquées (blocs placés dans une fiche ou une colonne) :
+     déjà dans la gouttière de leur section */
+  .site-section .site-section,
+  .fiche__blocs > .bloc > .site-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .header--langues .top-nav.top-nav--langues {
+    right: var(--gouttiere);
+  }
+}
+
+@media (max-width: 650px) {
+  :root {
+    --gouttiere: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --gouttiere: 18px;
+    --marge-fin-page: 42px;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --gouttiere: 15px;
+  }
 }
