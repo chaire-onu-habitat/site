@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chair-signing-ceremony-november-2024",
+    "titre": "Chair Signing Ceremony - November 2024",
+    "langue": "en",
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "imageLegende": true,
+    "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
+    "date": "2024-11-01",
+    "categorie": "seminaires-et-conferences",
+    "lien": "en/events/seminars-and-conferences/chair-signing-ceremony-november-2024.html",
+    "groupe": "fr/signature-de-la-chaire-novembre-2024"
+  },
+  {
+    "id": "signature-de-la-chaire-novembre-2024",
+    "titre": "Signature de la Chaire - Novembre 2024",
+    "langue": "fr",
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "imageLegende": true,
+    "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
+    "categorie": "seminaires-et-conferences",
+    "lien": "fr/evenements/seminaires-et-conferences/signature-de-la-chaire-novembre-2024.html",
+    "date": "2024-11-01",
+    "groupe": "fr/signature-de-la-chaire-novembre-2024"
+  }
+]

@@ -1,0 +1,326 @@
+{
+  "navigationSuperieure": [
+    {
+      "titre": "Projets",
+      "lien": "#"
+    },
+    {
+      "titre": "UN-Habitat",
+      "lien": "https://unhabitat.org/",
+      "nouvelOnglet": true
+    }
+  ],
+  "menu": [
+    {
+      "id": "a-propos",
+      "titre": "À propos",
+      "lien": "#",
+      "sousMenu": [
+        {
+          "id": "la-chaire",
+          "titre": "La Chaire",
+          "lien": "fr/a-propos/la-chaire.html",
+          "traductions": {
+            "en": {
+              "titre": "The UN-Habitat chair",
+              "slug": "the-un-habitat-chair",
+              "lien": "en/about/the-un-habitat-chair/about-the-chair.html"
+            }
+          }
+        },
+        {
+          "id": "methode",
+          "titre": "Méthode",
+          "lien": "fr/a-propos/methode.html",
+          "traductions": {
+            "en": {
+              "titre": "Methods",
+              "slug": "methods",
+              "lien": "en/about/methods.html"
+            }
+          }
+        },
+        {
+          "id": "gouvernance",
+          "titre": "Gouvernance",
+          "lien": "fr/a-propos/gouvernance.html",
+          "traductions": {
+            "en": {
+              "titre": "Governance",
+              "slug": "governance",
+              "lien": "fr/a-propos/gouvernance.html"
+            }
+          }
+        },
+        {
+          "titre": "Membres & partenaires",
+          "id": "membres-partenaires",
+          "lien": "fr/a-propos/membres-partenaires.html",
+          "traductions": {
+            "en": {
+              "titre": "Members and partners",
+              "slug": "members-and-partners",
+              "lien": "en/about/members-and-partners.html"
+            }
+          }
+        }
+      ],
+      "traductions": {
+        "en": {
+          "titre": "About",
+          "slug": "about"
+        }
+      }
+    },
+    {
+      "id": "projets",
+      "titre": "Projets",
+      "lien": "#",
+      "sousMenuAuto": {
+        "source": "projets",
+        "grouperPar": "pays"
+      },
+      "traductions": {
+        "en": {
+          "titre": "Projects",
+          "slug": "projects"
+        }
+      }
+    },
+    {
+      "titre": "Formations",
+      "id": "formations",
+      "lien": "#",
+      "sousMenu": [
+        {
+          "titre": "MOOC / Formation en ligne",
+          "id": "mooc-formation-en-ligne",
+          "lien": "fr/formations/mooc-formation-en-ligne.html",
+          "traductions": {
+            "en": {
+              "lien": "fr/formations/mooc-formation-en-ligne.html"
+            }
+          }
+        }
+      ],
+      "publie": false
+    },
+    {
+      "id": "evenements",
+      "titre": "Évènements",
+      "lien": "#",
+      "sousMenu": [
+        {
+          "titre": "Ateliers et stages",
+          "id": "ateliers-et-stages",
+          "lien": "fr/evenements/ateliers-et-stages.html",
+          "traductions": {
+            "en": {
+              "titre": "Workshops and internships",
+              "slug": "workshops-and-internships",
+              "lien": "fr/evenements/ateliers-et-stages.html"
+            }
+          }
+        },
+        {
+          "titre": "Séminaires et conférences",
+          "id": "seminaires-et-conferences",
+          "lien": "fr/evenements/seminaires-et-conferences.html",
+          "traductions": {
+            "en": {
+              "titre": "Seminars and conferences",
+              "slug": "seminars-and-conferences",
+              "lien": "fr/evenements/seminaires-et-conferences.html"
+            }
+          }
+        },
+        {
+          "titre": "Enquêtes de terrain",
+          "id": "enquetes-de-terrain",
+          "lien": "fr/evenements/enquetes-de-terrain.html",
+          "traductions": {
+            "en": {
+              "titre": "Fieldwork Investigations",
+              "slug": "fieldwork-investigations",
+              "lien": "fr/evenements/enquetes-de-terrain.html"
+            }
+          }
+        }
+      ],
+      "actualitesParDefaut": true,
+      "traductions": {
+        "en": {
+          "titre": "Events",
+          "slug": "events"
+        }
+      }
+    },
+    {
+      "id": "publications",
+      "titre": "Publications",
+      "lien": "#",
+      "sousMenu": [
+        {
+          "titre": "Ouvrages et articles scientifiques",
+          "id": "ouvrages-et-articles-scientifiques",
+          "lien": "fr/publications/ouvrages-et-articles-scientifiques.html",
+          "traductions": {
+            "en": {
+              "titre": "Academic publications",
+              "slug": "academic-publications",
+              "lien": "fr/publications/ouvrages-et-articles-scientifiques.html"
+            }
+          }
+        },
+        {
+          "titre": "Revue de presse",
+          "id": "revue-de-presse",
+          "lien": "fr/publications/revue-de-presse.html",
+          "traductions": {
+            "en": {
+              "titre": "Press reviews",
+              "slug": "press-reviews",
+              "lien": "fr/publications/revue-de-presse.html"
+            }
+          }
+        }
+      ],
+      "actualitesParDefaut": true,
+      "traductions": {
+        "en": {
+          "titre": "Publications",
+          "slug": "publications"
+        }
+      }
+    },
+    {
+      "id": "agenda",
+      "titre": "Agenda",
+      "lien": "#agenda",
+      "bouton": true,
+      "mobile": false,
+      "traductions": {
+        "en": {
+          "titre": "Calendar",
+          "slug": "calendar"
+        }
+      }
+    }
+  ],
+  "reseauxSociaux": {
+    "titre": "Connect",
+    "liens": [
+      {
+        "nom": "LinkedIn",
+        "icone": "images/linkedin.webp",
+        "lien": "https://www.linkedin.com/company/chaire-isci-mena/"
+      },
+      {
+        "nom": "Instagram",
+        "icone": "images/instagram.webp",
+        "lien": "#"
+      },
+      {
+        "nom": "Facebook",
+        "icone": "images/facebook.webp",
+        "lien": "#"
+      },
+      {
+        "nom": "YouTube",
+        "icone": "images/youtube.webp",
+        "lien": "#"
+      }
+    ]
+  },
+  "logos": [
+    {
+      "image": "images/logo.webp",
+      "alt": "ISCI-MENA",
+      "lien": "#"
+    },
+    {
+      "image": "images/csm-onu-h-logo-v2-2db382696f.webp",
+      "alt": "UN-Habitat",
+      "lien": "https://unhabitat.org/",
+      "nouvelOnglet": true
+    },
+    {
+      "image": "images/eivp2.webp",
+      "alt": "EIVP",
+      "lien": "https://www.eivp-paris.fr/",
+      "nouvelOnglet": true
+    },
+    {
+      "image": "images/logo-univ-gustave-eiffel-3lignes-rvb.svg",
+      "alt": "UGE",
+      "lien": "https://www.univ-gustave-eiffel.fr/",
+      "nouvelOnglet": true
+    }
+  ],
+  "site": {
+    "titre": "Chaire ONU-Habitat",
+    "logo": "images/logo.webp",
+    "langue": "fr",
+    "langues": ["fr", "en"],
+    "textes": {
+      "en": {
+        "Accueil": "Home",
+        "Langue": "Language",
+        "Lire :": "Read:",
+        "Voir :": "See:",
+        "En savoir plus": "Learn more",
+        "Tout voir :": "See all:",
+        "Sous-menu": "Submenu",
+        "Projet": "Project",
+        "Projets": "Projects",
+        "Publications": "Publications",
+        "Dernières actualités": "Latest news",
+        "Aller à la diapositive": "Go to slide",
+        "Document": "Document",
+        "Consulter": "View",
+        "Télécharger": "Download",
+        "Aucun document pour le moment.": "No documents yet.",
+        "Dézoomer": "Zoom out",
+        "Ajuster à la largeur": "Fit to width",
+        "Zoomer": "Zoom in",
+        "Fermer": "Close",
+        "Chargement du document…": "Loading document…",
+        "Page": "Page",
+        "Impossible d'afficher le document. Vous pouvez essayer de le télécharger.": "The document cannot be displayed. You can try downloading it.",
+        "Ajouter au calendrier": "Add to calendar",
+        "En cours": "Ongoing",
+        "À venir": "Upcoming",
+        "Aucun évènement programmé pour le moment.": "No upcoming events.",
+        "Passés": "Past",
+        "Aucun évènement passé.": "No past events.",
+        "Afficher plus d'évènements": "Show more events",
+        "Période": "Period",
+        "Afficher plus": "Show more",
+        "Tous les projets": "All projects",
+        "L'équipe du projet": "Project team",
+        "Publications scientifiques": "Scientific publications",
+        "Pour aller plus loin": "Further reading",
+        "Partenaires": "Partners",
+        "Membres": "Members",
+        "Membres et partenaires": "Members and partners",
+        "Nos membres et partenaires": "Our members and partners",
+        "Aucun membre ni partenaire pour le moment.": "No members or partners yet.",
+        "Lire la publication": "Read the publication",
+        "Lire la suite": "Read more",
+        "Aucun contenu pour le moment.": "No content yet.",
+        "Personnes": "People",
+        "Les projets de la Chaire": "The Chair's projects",
+        "Filtrer par pays": "Filter by country",
+        "Tous": "All",
+        "Aucun projet pour le moment.": "No projects yet.",
+        "Actualité précédente": "Previous news",
+        "Actualité suivante": "Next news",
+        "Choisir une actualité": "Choose a news item"
+      }
+    },
+    "titres": {
+      "en": "UN-Habitat Chair"
+    },
+    "url": "https://chaire-onu-habitat.org"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "carrousel": {
+    "elements": ["medina-de-tunis"],
+    "delai": 5000,
+    "texteBouton": "En savoir plus"
+  },
+  "blocs": [
+    {
+      "type": "carrousel"
+    },
+    {
+      "type": "titre",
+      "texte": "Dernières actualités",
+      "niveau": "2",
+      "alignement": "centre"
+    },
+    {
+      "type": "actualites",
+      "nombre": 5
+    },
+    {
+      "type": "bouton",
+      "boutonTexte": "VOIR TOUTE L'ACTUALITÉ DE LA CHAIRE",
+      "boutonLien": "fr/a-propos/la-chaire/actualites-de-la-chaire-onu-habitat.html"
+    },
+    {
+      "type": "titre",
+      "texte": "Ouvrages et articles scientifiques",
+      "niveau": "2",
+      "alignement": "centre"
+    },
+    {
+      "type": "publications",
+      "nombre": 5,
+      "nombreMobile": "4"
+    },
+    {
+      "type": "bouton",
+      "boutonTexte": "VOIR TOUTES LES PUBLICATIONS",
+      "boutonLien": "fr/publications/ouvrages-et-articles-scientifiques.html"
+    },
+    {
+      "type": "titre",
+      "texte": "Axes thématiques",
+      "niveau": "2",
+      "alignement": "centre",
+      "fond": "sombre"
+    },
+    {
+      "type": "focus",
+      "fond": "sombre",
+      "elements": [
+        {
+          "icone": "images/focus-nature.webp",
+          "texte": "Des solutions basées sur la nature"
+        },
+        {
+          "icone": "images/focus-circular.webp",
+          "texte": "Le développement inclusif des territoires par l’économie circulaire"
+        },
+        {
+          "icone": "images/focus-resilience.webp",
+          "texte": "La protection des patrimoines en danger et la résilience"
+        }
+      ]
+    },
+    {
+      "type": "bouton",
+      "boutonTexte": "EN SAVOIR PLUS À PROPOS DE LA CHAIRE",
+      "boutonLien": "fr/a-propos/la-chaire.html",
+      "fond": "sombre"
+    },
+    {
+      "type": "titre",
+      "texte": "Agenda",
+      "niveau": "2",
+      "alignement": "centre",
+      "fond": "gris"
+    },
+    {
+      "type": "agenda",
+      "nombreAvenir": 6,
+      "nombrePasses": 4
+    }
+  ],
+  "seoTitre": "Chaire ONU-Habitat - Accueil",
+  "traductions": {
+    "en": {
+      "blocs": [
+        {
+          "type": "carrousel"
+        },
+        {
+          "type": "titre",
+          "texte": "News",
+          "niveau": "2",
+          "alignement": "centre"
+        },
+        {
+          "type": "actualites",
+          "nombre": 5
+        },
+        {
+          "type": "bouton",
+          "boutonTexte": "ALL NEWS",
+          "boutonLien": "en/about/the-un-habitat-chair/news.html"
+        },
+        {
+          "type": "titre",
+          "texte": "Research and Publications",
+          "niveau": "2",
+          "alignement": "centre"
+        },
+        {
+          "type": "publications",
+          "nombre": 5,
+          "nombreMobile": "4"
+        },
+        {
+          "type": "bouton",
+          "boutonTexte": "ALL PUBLICATIONS",
+          "boutonLien": "fr/publications/ouvrages-et-articles-scientifiques.html"
+        },
+        {
+          "type": "titre",
+          "texte": "Axes thématiques",
+          "niveau": "2",
+          "alignement": "centre",
+          "fond": "sombre"
+        },
+        {
+          "type": "focus",
+          "fond": "sombre",
+          "elements": [
+            {
+              "icone": "images/focus-nature.webp",
+              "texte": "Nature-based solutions"
+            },
+            {
+              "icone": "images/focus-circular.webp",
+              "texte": "Inclusive territorial development through the circular economy"
+            },
+            {
+              "icone": "images/focus-resilience.webp",
+              "texte": "The protection of endangered heritage and resilience"
+            }
+          ]
+        },
+        {
+          "type": "bouton",
+          "boutonTexte": "LEARN MORE ABOUT THE CHAIR",
+          "boutonLien": "en/about/the-un-habitat-chair/about-the-chair.html",
+          "fond": "sombre"
+        },
+        {
+          "type": "titre",
+          "texte": "Calendar",
+          "niveau": "2",
+          "alignement": "centre",
+          "fond": "gris"
+        },
+        {
+          "type": "agenda",
+          "nombreAvenir": 6,
+          "nombrePasses": 4
+        }
+      ],
+      "seoTitre": "UN-Habitat Chair - Home"
+    }
+  }
+}

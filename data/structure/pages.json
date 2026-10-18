@@ -1,0 +1,495 @@
+{
+  "description": "Répertoire des pages internes du site, généré par le gestionnaire (ne pas modifier à la main).",
+  "genere": "2026-10-18T16:43:53.175Z",
+  "categories": [
+    {
+      "id": "",
+      "titre": "Pages principales",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/index.html",
+          "titre": "Accueil",
+          "type": "accueil",
+          "id": "fr",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "a-propos",
+      "titre": "À propos",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/a-propos/gouvernance.html",
+          "titre": "Gouvernance",
+          "type": "page",
+          "id": "gouvernance",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/la-chaire.html",
+          "titre": "La Chaire",
+          "type": "page",
+          "id": "la-chaire",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires.html",
+          "titre": "Membres & partenaires",
+          "type": "page",
+          "id": "membres-partenaires",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/methode.html",
+          "titre": "Méthode",
+          "type": "page",
+          "id": "methode",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "a-propos/la-chaire",
+      "titre": "À propos › La Chaire",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/a-propos/la-chaire/actualites-de-la-chaire-onu-habitat.html",
+          "titre": "Actualités de la Chaire ONU-Habitat",
+          "type": "page",
+          "id": "actualites-de-la-chaire-onu-habitat",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "a-propos/membres-partenaires",
+      "titre": "À propos › Membres & partenaires",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/a-propos/membres-partenaires/aida-nayer.html",
+          "titre": "Aida NAYER",
+          "type": "personne",
+          "id": "aida-nayer",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/aida-robbana.html",
+          "titre": "Aida ROBBANA",
+          "type": "personne",
+          "id": "aida-robbana",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/amina-beji-becheur.html",
+          "titre": "Amina BÉJI-BÉCHEUR",
+          "type": "personne",
+          "id": "amina-beji-becheur",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/chiraz-gafsia.html",
+          "titre": "Chiraz GAFSIA",
+          "type": "personne",
+          "id": "chiraz-gafsia",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/christian-piel.html",
+          "titre": "Christian PIEL",
+          "type": "personne",
+          "id": "christian-piel",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/eric-gautier-laurent.html",
+          "titre": "Eric GAUTIER-LAURENT",
+          "type": "personne",
+          "id": "eric-gautier-laurent",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/farah-sayem.html",
+          "titre": "Farah SAYEM",
+          "type": "personne",
+          "id": "farah-sayem",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/gael-maignan.html",
+          "titre": "Gaël MAIGNAN",
+          "type": "personne",
+          "id": "gael-maignan",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/gilles-hubert.html",
+          "titre": "Gilles HUBERT",
+          "type": "personne",
+          "id": "gilles-hubert",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/katia-laffrechine.html",
+          "titre": "Katia LAFFRECHINE",
+          "type": "personne",
+          "id": "katia-laffrechine",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/leila-damak.html",
+          "titre": "Leïla DAMAK",
+          "type": "personne",
+          "id": "leila-damak",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/lena-besson.html",
+          "titre": "Lena BESSON",
+          "type": "personne",
+          "id": "lena-besson",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/majdi-frihi.html",
+          "titre": "Majdi FRIHI",
+          "type": "personne",
+          "id": "majdi-frihi",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/margot-pellegrino.html",
+          "titre": "Margot PELLEGRINO",
+          "type": "personne",
+          "id": "margot-pellegrino",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/mariem-rekik.html",
+          "titre": "Mariem REKIK",
+          "type": "personne",
+          "id": "mariem-rekik",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/meriem-maazoul.html",
+          "titre": "Meriem MAAZOUL",
+          "type": "personne",
+          "id": "meriem-maazoul",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/olfa-ben-medien.html",
+          "titre": "Olfa BEN MEDIEN",
+          "type": "personne",
+          "id": "olfa-ben-medien",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/rania-hedeya.html",
+          "titre": "Rania HEDEYA",
+          "type": "personne",
+          "id": "rania-hedeya",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/saloua-ferjani.html",
+          "titre": "Saloua FERJANI",
+          "type": "personne",
+          "id": "saloua-ferjani",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/a-propos/membres-partenaires/yasmine-boughzala.html",
+          "titre": "Yasmine BOUGHZALA",
+          "type": "personne",
+          "id": "yasmine-boughzala",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "projets",
+      "titre": "Projets",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/projets/beni-khalled.html",
+          "titre": "Béni Khalled",
+          "type": "projet",
+          "id": "beni-khalled",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/projets/iles-kerkennah.html",
+          "titre": "Îles Kerkennah",
+          "type": "projet",
+          "id": "iles-kerkennah",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/projets/jdid.html",
+          "titre": "JDID",
+          "type": "projet",
+          "id": "jdid",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/projets/medina-de-tunis.html",
+          "titre": "Médina de Tunis",
+          "type": "projet",
+          "id": "medina-de-tunis",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/projets/plateforme-des-odd.html",
+          "titre": "Plateforme des ODD",
+          "type": "projet",
+          "id": "plateforme-des-odd",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/projets/theses-de-doctorat.html",
+          "titre": "Thèses de doctorat",
+          "type": "projet",
+          "id": "theses-de-doctorat",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "formations",
+      "titre": "Formations",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/formations/mooc-formation-en-ligne.html",
+          "titre": "MOOC / Formation en ligne",
+          "type": "page",
+          "id": "mooc-formation-en-ligne",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "evenements",
+      "titre": "Évènements",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/evenements/ateliers-et-stages.html",
+          "titre": "Ateliers et stages",
+          "type": "page",
+          "id": "ateliers-et-stages",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/evenements/enquetes-de-terrain.html",
+          "titre": "Enquêtes de terrain",
+          "type": "page",
+          "id": "enquetes-de-terrain",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/evenements/seminaires-et-conferences.html",
+          "titre": "Séminaires et conférences",
+          "type": "page",
+          "id": "seminaires-et-conferences",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "evenements/seminaires-et-conferences",
+      "titre": "Évènements › Séminaires et conférences",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/evenements/seminaires-et-conferences/signature-de-la-chaire-novembre-2024.html",
+          "titre": "Signature de la Chaire - Novembre 2024",
+          "type": "page",
+          "id": "signature-de-la-chaire-novembre-2024",
+          "langue": "fr",
+          "date": "2024-11-01"
+        }
+      ]
+    },
+    {
+      "id": "publications",
+      "titre": "Publications",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/publications/ouvrages-et-articles-scientifiques.html",
+          "titre": "Ouvrages et articles scientifiques",
+          "type": "page",
+          "id": "ouvrages-et-articles-scientifiques",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "fr/publications/revue-de-presse.html",
+          "titre": "Revue de presse",
+          "type": "page",
+          "id": "revue-de-presse",
+          "langue": "fr",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "",
+      "titre": "Pages principales",
+      "langue": "en",
+      "pages": [
+        {
+          "chemin": "en/index.html",
+          "titre": "Accueil",
+          "type": "accueil",
+          "id": "en",
+          "langue": "en",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "a-propos",
+      "titre": "About",
+      "langue": "en",
+      "pages": [
+        {
+          "chemin": "en/about/members-and-partners.html",
+          "titre": "Members and partners",
+          "type": "page",
+          "id": "members-and-partners",
+          "langue": "en",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "en/about/methods.html",
+          "titre": "Methods",
+          "type": "page",
+          "id": "methods",
+          "langue": "en",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "a-propos/la-chaire",
+      "titre": "About › The UN-Habitat chair",
+      "langue": "en",
+      "pages": [
+        {
+          "chemin": "en/about/the-un-habitat-chair/about-the-chair.html",
+          "titre": "About the chair",
+          "type": "page",
+          "id": "about-the-chair",
+          "langue": "en",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "en/about/the-un-habitat-chair/news.html",
+          "titre": "News",
+          "type": "page",
+          "id": "news",
+          "langue": "en",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "a-propos/membres-partenaires",
+      "titre": "About › Members and partners",
+      "langue": "en",
+      "pages": [
+        {
+          "chemin": "en/about/members-and-partners/chiraz-gafsia.html",
+          "titre": "Chiraz GAFSIA",
+          "type": "personne",
+          "id": "chiraz-gafsia",
+          "langue": "en",
+          "date": "2026-10-18"
+        },
+        {
+          "chemin": "en/about/members-and-partners/rania-hedeya.html",
+          "titre": "Rania HEDEYA",
+          "type": "personne",
+          "id": "rania-hedeya",
+          "langue": "en",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "projets",
+      "titre": "Projects",
+      "langue": "en",
+      "pages": [
+        {
+          "chemin": "en/projects/beni-khalled.html",
+          "titre": "Beni Khalled",
+          "type": "projet",
+          "id": "beni-khalled",
+          "langue": "en",
+          "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "evenements/seminaires-et-conferences",
+      "titre": "Events › Seminars and conferences",
+      "langue": "en",
+      "pages": [
+        {
+          "chemin": "en/events/seminars-and-conferences/chair-signing-ceremony-november-2024.html",
+          "titre": "Chair Signing Ceremony - November 2024",
+          "type": "page",
+          "id": "chair-signing-ceremony-november-2024",
+          "langue": "en",
+          "date": "2024-11-01"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "medina-de-tunis",
+    "pays": ["tunisie"],
+    "titre": "Médina de Tunis",
+    "image": "images/csm-rue-des-teinturiers-medina-de-tunis-avant-1900-0833d7-small-5b637d9bd4-2.webp",
+    "partenaires": ["un-habitat", "eivp", "lab-urba"],
+    "lien": "fr/projets/medina-de-tunis.html",
+    "imageLegende": true,
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-rue-des-teinturiers-medina-de-tunis-avant-1900-0833d7-small-5b637d9bd4-2.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La Médina de Tunis est patrimoine mondial de l’UNESCO depuis 1979. Connue pour son architecture historique et son artisanat ancestral, depuis 2011, elle rayonne également par une nouvelle activité culturelle bourgeonnante. Cette effusion impulsée par des acteurs non institutionnels, des associations à but non lucratif et des habitants contribue à régénérer la médina.",
+          "Afin de comprendre ce mécanisme, les chercheurs Eric GAUTIER LAURENT (Université Gustave Eiffel) et Meriem MAAZOUL (ESSEC Tunis) ont conduit une ethnographie au sein de la médina, appuyés par Mariem REKIK (ONU-Habitat Tunis)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jdid",
+    "pays": ["tunisie"],
+    "titre": "JDID",
+    "image": "images/csm-slide3-e10f4d9a11.webp",
+    "lien": "fr/projets/jdid.html",
+    "imageLegende": true,
+    "partenaires": [
+      "un-habitat",
+      "enau",
+      "lab-urba",
+      "snit",
+      "isteub",
+      "ecole-d-urbanisme-de-paris",
+      "uge",
+      "universite-tunis-carthage"
+    ],
+    "langue": "fr",
+    "personnes": ["chiraz-gafsia", "gilles-hubert", "christian-piel", "saloua-ferjani", "olfa-ben-medien"],
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-chameau-el-agba-70afef97ce.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "En arabe, **JDID** signifie « **nouveau** ». En français, c’est l’acronyme de « **Jalons pour un Développement Immobilier Durable** ».",
+          "Débuté en 2022, il s’agit du **1er projet de la Chaire** ISCI-MENA, à l’origine de sa fondation en novembre 2024.",
+          "Le projet accompagne, par une série d**’ateliers universitaires**, les institutions tunisiennes dans le déploiement de pratiques d’**urbanisme plus durables**, à même de répondre aux **défis environnementaux** et aux évolutions de la société tunisienne. L’**université Gustave Eiffel** et l'**université de Carthage** se sont engagées dans cette démarche en partenariat avec l’**ONU-Habitat Tunisie** afin de répondre à ce besoin exprimé par la **SNIT** (Société nationale immobilière de Tunisie) et la **ville de Tunis.**",
+          "JDID s'inscrit dans le 1er axe thématique de la Chaire : « **des solutions basées sur la nature** ».",
+          "Les **chargés de projet** sont Mme Chiraz Gafsia (ONU-Habitat Tunis), M. Christian PIEL et M. Gilles HUBERT (EIVP), Mme Olfa BEN MEDIEN (ISTEUB) et Mme Seloua FERJANI (ENAU)."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Origine du projet",
+        "niveau": "2"
+      },
+      {
+        "type": "texte-image",
+        "position": "droite",
+        "paragraphes": [
+          "Depuis 1957, la **SNIT** (Société Nationale Immobilière de Tunisie) est le principal fournisseur de **logements collectifs** du pays. En Tunisie, la notion de « bailleur social » n’existe pas, les politiques publiques en matière de logement visent l’**accès à la propriété**.",
+          "Le quartier d**’El Agba 1** a été construit à cette fin en 2010. Aujourd’hui, une réflexion est en cours pour penser son adaptation aux fortes chaleurs de plus en plus fréquentes.",
+          "En effet, selon une [__étude de l'INM__](https://www.meteo.tn/sites/default/files/2024-12/Bilan%20climatique%20de%20l%27%C3%A9t%C3%A9%202024.pdf) (Institut National tunisien de la Météorologie), en 2024, la température moyenne (29.5 °C) a été supérieure à la normale de 1.5 °C. **L’été 2024 se classe ainsi au 4e rang des étés les plus chauds depuis 1950**, ex aequo avec l’été 2023 et 2012 et derrière 2003, 2022 et 2021.",
+          "C’est pourquoi, la SNIT s'est adressée à l’**ONU-Habitat Tunisie** pour obtenir des conseils sur la **mise en œuvre de pratiques de développement urbain durable**.",
+          "Il s’agit d’**adapter le bâti** à la hausse des températures et aux défis actuels en matière de durabilité, mais aussi d’en tenir compte dans les **prochains projets immobiliers**, en particulier le **site Agba 2**. Ce terrain de 53 hectares est situé à l'ouest du Grand Tunis. Il est voué à devenir un quartier de plus de 5 000 unités d'habitation.",
+          "De cette requête est né le projet JDID (« **Jalons pour un Développement Immobilier Durable** »). Débuté en 2022, il représente une **nouvelle approche de la conception urbaine** qui s'aligne sur le mandat d'ONU-Habitat et les objectifs de développement durable, en particulier l'**ODD 11** et l’**ODD 13**.",
+          "Ce travail se traduit par divers **ateliers et études universitaires** menés de concert avec l’**Université Gustave Eiffel** (EIVP / Département Génie Urbain) et l’**Université de Carthage** (ENAU et ISTEUB : écoles d’architecture, d’urbanisme, de technologie et de construction).",
+          "Le projet se découpe en **jalons :**",
+          "- Le **1er,** en architecture et ingénierie, étudie le terrain nu d'El Agba 2 et ses problématiques (ravines, Oued et inondations).\n- Le **2ème**, en urbanisme, apporte des recommandtions sur l'habitat, les conditions de vie et l'accès aux services à partir d'une analyse socio-urbaine des habitants d'El Agba 1.\n- Le **3ème**, en architecture et ingénierie, se concentrera sur la faisabilité des solutions d'infiltration d'eau sur le terrain d'El Agba 1 (réemploi des eaux grises, phytoremédiation, toits terrasses éponges, etc.)."
+        ],
+        "image": "images/csm-slide3-e10f4d9a11.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "id": "plateforme-des-odd",
+    "pays": ["tunisie", "maroc"],
+    "titre": "Plateforme des ODD",
+    "image": "images/csm-stage-livia-078d89a752.webp",
+    "personnes": ["amina-beji-becheur", "rania-hedeya", "aida-robbana"],
+    "lien": "fr/projets/plateforme-des-odd.html",
+    "imageLegende": true,
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-stage-livia-078d89a752.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La localisation des Objectifs de Développement Durable (ODD) est un enjeu central de l’Agenda 2030. Pour construire des politiques publiques efficaces, les collectivités locales doivent être capables de mesurer leurs progrès et d’évaluer l’impact de leurs actions sur le développement durable."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iles-kerkennah",
+    "pays": ["tunisie"],
+    "titre": "Îles Kerkennah",
+    "image": "images/img-1479.webp",
+    "partenaires": ["un-habitat", "eivp", "lab-urba"],
+    "personnes": ["rania-hedeya", "aida-robbana", "amina-beji-becheur"],
+    "lien": "fr/projets/iles-kerkennah.html",
+    "imageLegende": true,
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/img-1479.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Situé dans le golfe de Gabès, en Tunisie, l’archipel des Kerkennah est confronté à la montée des eaux. Plusieurs facteurs humains aggravant la situation. La reconnexion aux pratiques de soin mutuel et aux savoirs endogènes pourrait constituer un levier essentiel pour repenser les stratégies d’adaptation de l'île.",
+          "C’est sur cette solution que se sont penchées trois chercheuses en gestion, marketing et sciences sociales des universités Gustave Eiffel, Bretagne Sud et de Nantes : Mmes Amina BÉJI-BÉCHEUR, IRG ; Leïla DAMAK, LEGO ; Danielle PAILLER, LEMNA). De ce travail est issue une communication scientifique partagée lors d’un colloque à Djerba : « Renforcer la résilience climatique par une approche basée sur le care, les droits culturels et l'innovation sociale. Cas des îles Kerkennah ». Mariem REKIK (ONU-Habitat) assurait la coordination institutionnelle de ce projet."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "beni-khalled",
+    "pays": ["tunisie"],
+    "titre": "Béni Khalled",
+    "image": "images/csm-bk-23-09-07-7dce9718d2.webp",
+    "personnes": ["rania-hedeya", "amina-beji-becheur", "aida-robbana"],
+    "lien": "fr/projets/beni-khalled.html",
+    "imageLegende": true,
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-bk-23-09-07-7dce9718d2.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Béni Khalled est une ville tunisienne réputée pour ses oranges. Elle fait face à un problème de déchets sauvages des fruits non calibrés pour la consommation. Pour y remédier, les femmes artisanes de la région ont monté des activités informelles de transformation des déchets d’agrumes."
+        ]
+      }
+    ],
+    "traductions": {
+      "en": {
+        "titre": "Beni Khalled",
+        "slug": "beni-khalled",
+        "blocs": [
+          {
+            "type": "image",
+            "image": "images/csm-bk-23-09-07-7dce9718d2.webp",
+            "imageLegende": true
+          },
+          {
+            "type": "texte",
+            "paragraphes": [
+              "*\"My country is famous for its produce,*\n*The Creator shaped it in His finest image,*\n*Its fruits are always appreciated,*\n*Desired in every land,*\n*Oh, my eyes upon Béni Khalled...\"*",
+              "Thus sang Ouleya in the 1960s, celebrating this agricultural land. Sixty years on, the citrus fruits of Béni Khalled remain a source of pride and wealth for this northeastern Tunisian town, nestled in the Cap Bon region.",
+              "However, by 2025, **the issue of fruit degradation has become a pressing concern**. Citrus fruits deemed unsuitable for the fresh produce market are left to rot, as no formal recycling system exists. These wild waste deposits pose **both sanitary and environmental hazards**. **Local craftswomen, recognising the issue, began informally transforming these abandoned citrus fruits**.",
+              "UN-Habitat Tunisia, having identified the issue early on, commissioned a team of economics and management researchers to support the craftswomen in **developing a collective entrepreneurial project grounded in the circular economy**. Waste management experts were also involved to provide technical assessment."
+            ]
+          }
+        ],
+        "lien": "en/projects/beni-khalled.html"
+      }
+    }
+  },
+  {
+    "titre": "Thèses de doctorat",
+    "id": "theses-de-doctorat",
+    "pays": ["tunisie"],
+    "lien": "fr/projets/theses-de-doctorat.html",
+    "personnes": ["farah-sayem"],
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image"
+      },
+      {
+        "type": "texte",
+        "paragraphes": ["La Chaire ISCI-MENA encadre également plusieurs contrats doctoraux."]
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+{
+  "categories": [
+    {
+      "id": "organisations-fondatrices",
+      "titre": "Organisations fondatrices de la Chaire ISCI-MENA",
+      "traductions": {
+        "en": {
+          "titre": "Founding Organisations of the ISCI-MENA Chair"
+        }
+      }
+    },
+    {
+      "id": "composantes-universite-gustave-eiffel",
+      "titre": "Composantes de l'Université Gustave Eiffel",
+      "traductions": {
+        "en": {
+          "titre": "Components of Gustave Eiffel University"
+        }
+      }
+    },
+    {
+      "id": "universites-ecoles-partenaires",
+      "titre": "Universités et écoles partenaires",
+      "traductions": {
+        "en": {
+          "titre": "Partner Institutions"
+        }
+      }
+    },
+    {
+      "id": "institutions-partenaires",
+      "titre": "Institutions partenaires",
+      "traductions": {
+        "en": {
+          "titre": "Partner Universities and Schools"
+        }
+      }
+    }
+  ],
+  "organisations-fondatrices": [
+    {
+      "id": "un-habitat",
+      "nom": "UN-Habitat",
+      "image": "images/csm-onu-h-logo-v2-2db382696f.webp",
+      "lien": "https://unhabitat.org/fr/node/2969",
+      "nouvelOnglet": true
+    },
+    {
+      "id": "uge",
+      "nom": "Université Gustave Eiffel",
+      "image": "images/csm-uge2-1f4df704f0.webp",
+      "lien": "https://www.univ-gustave-eiffel.fr/",
+      "nouvelOnglet": true
+    },
+    {
+      "id": "eivp",
+      "nom": "EIVP",
+      "image": "images/csm-eivp-logo-v2-aa69deca62.webp",
+      "lien": "https://www.eivp-paris.fr/",
+      "nouvelOnglet": true
+    }
+  ],
+  "composantes-universite-gustave-eiffel": [
+    {
+      "id": "lab-urba",
+      "nom": "Lab'URBA",
+      "image": "images/csm-laburba-logo-v2-dc5b863c24.webp",
+      "lien": "https://laburba.univ-gustave-eiffel.fr/",
+      "nouvelOnglet": true
+    },
+    {
+      "id": "erudite",
+      "nom": "Laboratoire Érudite",
+      "lien": "https://erudite-upec.univ-gustave-eiffel.fr/",
+      "nouvelOnglet": true,
+      "image": "images/csm-erudite-logo-v2-5a686af4b6.webp"
+    },
+    {
+      "nom": "Fondation de l'Université Gustave Eiffel",
+      "id": "fondation-de-l-universite-gustave-eiffel",
+      "image": "images/csm-fondation-gustave-eiffel-logo-0b57c1f3fd.webp"
+    },
+    {
+      "nom": "École d'Urbanisme de Paris",
+      "id": "ecole-d-urbanisme-de-paris",
+      "image": "images/csm-eup-logo-v2-7b329b04ad.webp"
+    },
+    {
+      "nom": "ENSA Paris-Est",
+      "id": "ensa-paris-est",
+      "image": "images/csm-eavt-logo-3901507c78.webp"
+    },
+    {
+      "nom": "IRG",
+      "id": "irg",
+      "image": "images/csm-irg-logo-v2-2-b4fb53bee9.webp"
+    },
+    {
+      "nom": "LISIS",
+      "id": "lisis",
+      "image": "images/csm-lisis-rectangle-logo-v2-610c214024.webp"
+    },
+    {
+      "nom": "GERS",
+      "id": "gers",
+      "image": "images/csm-gers-logo-3441f4b258.webp"
+    }
+  ],
+  "universites-ecoles-partenaires": [
+    {
+      "nom": "Université Française d'Égypte",
+      "id": "universite-francaise-d-egypte",
+      "image": "images/csm-ufe-logo-v2-c053ab8af0.webp"
+    },
+    {
+      "nom": "Université Tunis Carthage",
+      "id": "universite-tunis-carthage",
+      "image": "images/csm-uni-carthage-logo-v2-5105d63234.webp"
+    },
+    {
+      "id": "enit",
+      "nom": "ENIT",
+      "image": "images/images.webp",
+      "lien": "",
+      "nouvelOnglet": true
+    },
+    {
+      "id": "enau",
+      "nom": "ENAU",
+      "image": "images/csm-enau-logo-v2-a52f108df0.webp",
+      "lien": "",
+      "nouvelOnglet": true
+    },
+    {
+      "nom": "ISTEUB",
+      "id": "isteub",
+      "image": "images/csm-isteub-logo-v2-e292d88c03.webp"
+    },
+    {
+      "nom": "Université de Tunis",
+      "id": "universite-de-tunis",
+      "image": "images/csm-univ-tunis-logo-v2-52f1deacd7.webp"
+    },
+    {
+      "nom": "Institut Supérieur de Gestion de Tunis",
+      "id": "institut-superieur-de-gestion-de-tunis",
+      "image": "images/csm-isg-logo-v2-acf2e8f628.webp"
+    },
+    {
+      "nom": "ESSECT",
+      "id": "essect",
+      "image": "images/csm-essect-logo-v2-58f57ac8ed.webp"
+    }
+  ],
+  "institutions-partenaires": [
+    {
+      "id": "snit",
+      "nom": "SNIT",
+      "image": "images/societe-nationale-immobiliere-de-tunisie.webp",
+      "lien": "",
+      "nouvelOnglet": true
+    }
+  ]
+}

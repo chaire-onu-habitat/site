@@ -1,0 +1,493 @@
+[
+  {
+    "id": "ouvrages-et-articles-scientifiques",
+    "titre": "Ouvrages et articles scientifiques",
+    "categorie": "publications/ouvrages-et-articles-scientifiques",
+    "dansActualites": false,
+    "lien": "fr/publications/ouvrages-et-articles-scientifiques.html",
+    "blocs": [
+      {
+        "type": "publications",
+        "nombre": "tous"
+      }
+    ],
+    "liensEnBloc": true,
+    "dansAgenda": false,
+    "langue": "fr"
+  },
+  {
+    "id": "membres-partenaires",
+    "titre": "Membres & partenaires",
+    "categorie": "a-propos/membres-partenaires",
+    "dansActualites": false,
+    "lien": "fr/a-propos/membres-partenaires.html",
+    "blocs": [
+      {
+        "type": "membres-partenaires",
+        "tous": true,
+        "volet": false
+      }
+    ],
+    "liensEnBloc": true,
+    "dansAgenda": false,
+    "langue": "fr",
+    "groupe": "fr/membres-partenaires"
+  },
+  {
+    "id": "methode",
+    "titre": "Méthode",
+    "categorie": "a-propos/methode",
+    "dansActualites": false,
+    "lien": "fr/a-propos/methode.html",
+    "liensEnBloc": true,
+    "dansAgenda": false,
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "bouton",
+        "boutonTexte": "En savoir plus",
+        "boutonLien": "fr/a-propos/gouvernance.html"
+      }
+    ],
+    "groupe": "fr/methode"
+  },
+  {
+    "id": "revue-de-presse",
+    "titre": "Revue de presse",
+    "categorie": "publications/revue-de-presse",
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "categorie",
+        "categorie": "revue-de-presse",
+        "nombre": "tous"
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "lien": "fr/publications/revue-de-presse.html",
+    "dansAgenda": false,
+    "langue": "fr"
+  },
+  {
+    "id": "gouvernance",
+    "titre": "Gouvernance",
+    "categorie": "a-propos/gouvernance",
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "titre",
+        "texte": "Titre de la section",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": ["sdgsdfg", "sdfgsdfgdsfgsdgf", "ffffff"]
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "lien": "fr/a-propos/gouvernance.html",
+    "dansAgenda": false,
+    "langue": "fr",
+    "groupe": "fr/gouvernance"
+  },
+  {
+    "id": "mooc-formation-en-ligne",
+    "titre": "MOOC / Formation en ligne",
+    "categorie": "formations/mooc-formation-en-ligne",
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "titre",
+        "niveau": "2"
+      },
+      {
+        "type": "texte"
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "lien": "fr/formations/mooc-formation-en-ligne.html",
+    "personnes": ["gael-maignan", "amina-beji-becheur"],
+    "dansAgenda": false,
+    "langue": "fr"
+  },
+  {
+    "id": "actualites-de-la-chaire-onu-habitat",
+    "titre": "Actualités de la Chaire ONU-Habitat",
+    "categorie": "a-propos/la-chaire",
+    "liensEnBloc": true,
+    "dansActualites": false,
+    "lien": "fr/a-propos/la-chaire/actualites-de-la-chaire-onu-habitat.html",
+    "blocs": [
+      {
+        "type": "liste",
+        "source": "fil",
+        "nombre": "tous"
+      }
+    ],
+    "dansAgenda": false,
+    "langue": "fr",
+    "groupe": "fr/actualites-de-la-chaire-onu-habitat"
+  },
+  {
+    "id": "la-chaire",
+    "titre": "La Chaire",
+    "categorie": "a-propos/la-chaire",
+    "blocs": [
+      {
+        "type": "texte-image",
+        "paragraphes": [
+          "Social innovation and international cooperation with impact for the liveability of cities and territories : \nVoici ce que signifie l'acronyme de la Chaire ISCI MENA.\nOn le traduit par « Innover Socialement pour des Villes Durables au Moyen-Orient et en Afrique du Nord » en français.",
+          "Officialisée au Caire en novembre 2024 lors de la 12ème édition du [**Forum Urbain Mondial**](https://www.univ-gustave-eiffel.fr/luniversite/pages-speciales/vue-detaillee/une-nouvelle-chaire-pour-linnovation-sociale-au-service-des-villes-durables-au-moyen-orient-et-en-afrique-du-nord), la Chaire ISCI MENA est le fruit d'[une collaboration réussie entre l'ONU et l'Université Gustave Eiffel](http://changer/).",
+          "Il s'agit de la toute **1re chaire universitaire co-fondée par l'ONU-Habitat**. Ses activités ciblent les pays de la [zone MENA](https://unhabitat.org/arab-states-region)."
+        ],
+        "position": "droite",
+        "image": "images/csm-mena-carte-v2-5c85b10cff.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "titre",
+        "texte": "Constat",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Le réchauffement climatique affecte **toutes les rives de la Méditerrannée**.",
+          "Comme le soulignent le rapport [***Copernicus 2023***](https://library.wmo.int/viewer/69480/download?file=ESOTC-2023-Summary_fr.pdf&type=pdf&navigator=1) sur l’état du climat en Europe et ***l’évaluation européenne des risques climatiques*** de l’[**Agence Européenne de l’Environnement**](https://www.eea.europa.eu/en/topics/at-a-glance/climate), **le continent européen se réchauffe deux fois plus vite que la moyenne mondiale** depuis les années 1980, devenant ainsi le continent qui se réchauffe le plus rapidement sur Terre. Dans un rapport intitulé [***Etat du climat en Afrique 2024***](https://news.un.org/fr/story/2025/05/1155436) rédigé par l’[**Organisation Météorologique Mondiale**](https://wmo.int/fr) (OMM), on note que **sur le continent africain, c’est la région de l’Afrique du Nord qui a enregistré la température moyenne la plus élevée en 2024**, soit 1,28°C au-dessus de la moyenne 1991-2020. C’est la sous-région qui se réchauffe le plus rapidement en Afrique.",
+          "Ce phénomène est loin d'être isolé : sécheresses, inondations, érosion des sols, disparition de la biodiversité : **les territoires sont soumis à des transformations** bouleversant nos pratiques et rendant obsolètes les complexes architecturaux."
+        ]
+      },
+      {
+        "type": "citation",
+        "paragraphes": [
+          "La crise climatique est le plus grand défi de notre époque. L'action climatique a son prix, mais l'inaction coûte encore beaucoup plus cher [...] nous devons mettre à contribution la science afin de trouver des solutions pour le bien de la société."
+        ],
+        "auteur": "Celeste Saulo,",
+        "precision": "Secrétaire générale, OMM – Organisation météorologique mondiale (2023)"
+      },
+      {
+        "type": "titre",
+        "texte": "Mission",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Le partenariat entre ONU-Habitat et l’Université Gustave Eiffel représente **une réponse nécessaire aux défis climatiques contemporains, en mettant l'innovation sociale au cœur de l’adaptation et la transformation urbaine**. La chaire sert de **plateforme pour la recherche** et le **développement de solutions coconstruites avec les parties prenantes concernées** pour **améliorer l’habitabilité des villes et territoires** souffrant du réchauffement climatique, notamment sur la zone MENA.",
+          "Cette collaboration témoigne de la volonté commune de l’ONU-Habitat et de l’Université Gustave Eiffel de **bâtir un avenir urbain plus durable et inclusif, essentiel pour le bien-être des générations futures**."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Axes thématiques",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Les travaux de la Chaire s'articulent autour de **3 axes thématiques** :",
+          "- Des solutions basées sur la nature ;\n- Le développement inclusif des territoires par l’économie circulaire ;\n- La protection des patrimoines en danger et la résilience."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Objectifs",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La Chaire ISCI MENA a pour but de marquer une avancée significative dans la **promotion de l’innovation sociale, de la durabilité urbaine et du développement inclusif**, conformément aux objectifs de ses deux organisations mères.",
+          "Pour ce faire, les objectifs de la chaire sont les suivants :",
+          "- **Encourager la recherche collaborative et l’innovation** pour relever les défis urbains et promouvoir le développement durable.\n- **Promouvoir, via l'open science, l’échange de connaissances**, de meilleures pratiques et de solutions innovantes dans les domaines de la résilience urbaine, de la gouvernance et de l’inclusivité.\n- **Développer les compétences** grâce à des programmes académiques conjoints, des ateliers et des événements pour faire avancer la mise en œuvre des ODD aux niveaux local et régional.\n- **Établir un réseau solide** entre institutions académiques, décideurs urbains et organisations internationales pour favoriser des décisions basées sur des données probantes en matière de politique urbaine."
+        ]
+      },
+      {
+        "type": "liens",
+        "depuisPage": true,
+        "publie": false
+      }
+    ],
+    "liensEnBloc": true,
+    "dansActualites": false,
+    "lien": "fr/a-propos/la-chaire.html",
+    "dansAgenda": false,
+    "langue": "fr",
+    "groupe": "fr/la-chaire"
+  },
+  {
+    "id": "enquetes-de-terrain",
+    "titre": "Enquêtes de terrain",
+    "categorie": "evenements/enquetes-de-terrain",
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "categorie",
+        "categorie": "enquetes-de-terrain",
+        "nombre": "tous"
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "lien": "fr/evenements/enquetes-de-terrain.html",
+    "dansAgenda": false,
+    "langue": "fr"
+  },
+  {
+    "id": "ateliers-et-stages",
+    "titre": "Ateliers et stages",
+    "categorie": "evenements/ateliers-et-stages",
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "categorie",
+        "categorie": "ateliers-et-stages",
+        "nombre": "tous"
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "lien": "fr/evenements/ateliers-et-stages.html",
+    "dansAgenda": false,
+    "langue": "fr"
+  },
+  {
+    "id": "seminaires-et-conferences",
+    "titre": "Séminaires et conférences",
+    "categorie": "evenements/seminaires-et-conferences",
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "categorie",
+        "categorie": "seminaires-et-conferences",
+        "nombre": "tous"
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "lien": "fr/evenements/seminaires-et-conferences.html",
+    "dansAgenda": false,
+    "langue": "fr"
+  },
+  {
+    "id": "signature-de-la-chaire-novembre-2024",
+    "titre": "Signature de la Chaire - Novembre 2024",
+    "categorie": "evenements/seminaires-et-conferences",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La cérémonie des signatures s’est déroulée entre [Madame Rania Hedeya](https://www.google.com/url?q=https://mena.uhph.org/speaker/rania-hedeya/&sa=D&source=docs&ust=1749762960184492&usg=AOvVaw34_3nO96XZOMrUAXpH5wGO), représentante régionale par intérim pour [les États arabes à ONU-Habitat](https://unhabitat.org/arab-states-region), et Monsieur Gilles Roussel, président de l’Université Gustave Eiffel.",
+          "Elle s’est faite en présence de [Monsieur Thani Mohamed Soilihi](https://www.diplomatie.gouv.fr/fr/les-ministres/thani-mohamed-soilihi/biographie/), secrétaire d'État à la Francophonie et aux Partenariats internationaux, [Ministère de l’Europe et des Affaires Étrangères](https://www.diplomatie.gouv.fr/fr/), de [Monsieur Damien Botteghi](https://attributionlogementsocialetdalo.logement.gouv.fr/m-damien-botteghi-nouveau-directeur-de-l-habitat-a444.html), directeur de l'Habitat, de l'Urbanisme et des Paysages, [Ministère de la Transition Écologique, de l'Énergie, du Climat et de la Prévention des Risques](https://www.ecologie.gouv.fr/) et de [Monsieur Jérôme Gleizes](https://www.paris.fr/pages/gleizes-jerome-2284), élu à la Ville de Paris et président de l’EIVP, ainsi que [Monsieur Franck Jung](https://www.letudiant.fr/educpros/personnalites/jung-franck.html), directeur de [l’EIVP](https://www.eivp-paris.fr/)__.__\nMesdames Aida Robbana, cheffe du bureau d’[ONU-Habitat en Tunisie](https://unhabitat.org/fr/tunisie), Amina Béji-Bécheur, professeure et directrice International de l’EIVP et vice-présidente International déléguée à la zone MENA de l’Université Gustave Eiffel seront également présentes."
+        ]
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "imageLegende": true,
+    "dansActualites": true,
+    "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
+    "lien": "fr/evenements/seminaires-et-conferences/signature-de-la-chaire-novembre-2024.html",
+    "actualite": "signature-de-la-chaire-novembre-2024",
+    "groupe": "fr/signature-de-la-chaire-novembre-2024",
+    "date": "2024-11-01"
+  },
+  {
+    "titre": "About the chair",
+    "categorie": "a-propos/la-chaire",
+    "blocs": [
+      {
+        "type": "texte-image",
+        "paragraphes": [
+          "**Social Innovation and International Cooperation with Impact for Livable Cities and Territories**\nThis is the meaning of the acronym ISCI‑MENA.",
+          "Officially inaugurated in Cairo in November 2024 during the [**12th World Urban Forum**](https://wuf.unhabitat.org/wuf12), the ISCI‑MENA Chair is the result of a successful partnership between the United Nations and Gustave Eiffel University.",
+          "It is **the first-ever university Chair co‑founded by UN‑Habitat**. Its activities are focused on countries within [**the MENA region**](https://unhabitat.org/arab-states-region)."
+        ],
+        "position": "droite",
+        "image": "images/csm-mena-carte-v2-5c85b10cff.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "titre",
+        "texte": "Context",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Climate warming is affecting **all shores of the Mediterranean**.",
+          "As emphasised by the [**2023 Copernicus report**](https://www.eea.europa.eu/en/analysis/publications/european-climate-risk-assessment) on **Europe’s climate and the European Climate Risk Assessment** by the [**European Environment Agency**](https://www.eea.europa.eu/en), **Europe is warming at twice the global average since the 1980s**, making it the continent experiencing the most rapid increase in temperature on Earth.",
+          "According to the [**World Meteorological Organization**](https://wmo.int/)’s “[**State of the Climate in Africa 2024**](https://wmo.int/publication-series/state-of-climate-africa-2024)” report, **North Africa recorded the highest mean temperature on the African continent in 2024**—specifically, 1.28 °C above the 1991–2020 average—making it the fastest‑warming sub‑region in Africa. [isci-mena.univ-gustave-eiffel.fr](https://isci-mena.univ-gustave-eiffel.fr/a-propos/la-chaire?utm_source=chatgpt.com)",
+          "This is far from an isolated phenomenon: droughts, floods, soil erosion and biodiversity loss—**territories are undergoing transformations** that disrupt traditional practices and render architectural infrastructures obsolete."
+        ]
+      },
+      {
+        "type": "citation",
+        "paragraphes": [
+          "*The climate crisis is the greatest challenge of our time. Climate action has its costs, but inaction costs even more […] we must draw on science to find solutions for the good of society.*"
+        ],
+        "auteur": "Celeste Saulo,",
+        "precision": "Secretary‑General, WMO (2023)"
+      },
+      {
+        "type": "titre",
+        "texte": "Mission",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "The partnership between UN‑Habitat and Gustave Eiffel University represents **a necessary response to contemporary climate challenges, placing social innovation at the heart of urban adaptation and transformation**.",
+          "The Chair serves as **a platform for research** and **the development of co‑designed solutions** involving relevant stakeholders to **improve the liveability of cities and territories** affected by climate warming, particularly in the MENA region.",
+          "This collaboration showcases the shared commitment of UN‑Habitat and Gustave Eiffel University to **building a more sustainable and inclusive urban future**—vital for the well-being of future generations."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Thematic focus areas",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "The Chair’s work is structured around **three thematic streams**:",
+          "- Nature-based solutions\n- Inclusive territorial development through the circular economy\n- Heritage protection and resilience in at-risk areas"
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Objectives",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "The ISCI‑MENA Chair aims to **advance social innovation, urban sustainability, and inclusive development** in line with the objectives of its two founding organisations.",
+          "To achieve this, the Chair’s objectives include:",
+          "- **Fostering collaborative research** and innovation to address urban challenges and promote sustainable development.\n- **Promoting knowledge exchange**, best practices, and innovative solutions in urban resilience, governance, and inclusivity through open science.\n- **Developing skills** through joint academic programmes, workshops and events to further the implementation of the SDGs at local and regional levels.\n- **Establishing a robust network** among academic institutions, urban policymakers and international organisations to support evidence‑based urban policy decisions."
+        ]
+      },
+      {
+        "type": "liens",
+        "depuisPage": true,
+        "publie": false
+      }
+    ],
+    "liensEnBloc": true,
+    "dansActualites": false,
+    "dansAgenda": false,
+    "langue": "en",
+    "groupe": "fr/la-chaire",
+    "id": "about-the-chair",
+    "lien": "en/about/the-un-habitat-chair/about-the-chair.html"
+  },
+  {
+    "titre": "News",
+    "categorie": "a-propos/la-chaire",
+    "liensEnBloc": true,
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "liste",
+        "source": "fil",
+        "nombre": "tous"
+      }
+    ],
+    "dansAgenda": false,
+    "langue": "en",
+    "groupe": "fr/actualites-de-la-chaire-onu-habitat",
+    "id": "news",
+    "lien": "en/about/the-un-habitat-chair/news.html"
+  },
+  {
+    "titre": "Methods",
+    "categorie": "a-propos/methode",
+    "dansActualites": false,
+    "liensEnBloc": true,
+    "dansAgenda": false,
+    "langue": "en",
+    "groupe": "fr/methode",
+    "id": "methods",
+    "lien": "en/about/methods.html",
+    "blocs": [
+      {
+        "type": "bouton",
+        "boutonTexte": "En savoir plus",
+        "boutonLien": "fr/a-propos/gouvernance.html"
+      }
+    ]
+  },
+  {
+    "titre": "Members and partners",
+    "categorie": "a-propos/membres-partenaires",
+    "dansActualites": false,
+    "blocs": [
+      {
+        "type": "membres-partenaires",
+        "tous": true,
+        "volet": false
+      }
+    ],
+    "liensEnBloc": true,
+    "dansAgenda": false,
+    "langue": "en",
+    "groupe": "fr/membres-partenaires",
+    "id": "members-and-partners",
+    "lien": "en/about/members-and-partners.html"
+  },
+  {
+    "titre": "Chair Signing Ceremony - November 2024",
+    "categorie": "evenements/seminaires-et-conferences",
+    "langue": "en",
+    "blocs": [
+      {
+        "type": "texte",
+        "paragraphes": [
+          "The signing ceremony took place between [Ms Rania Hedeya](https://www.google.com/url?q=https://mena.uhph.org/speaker/rania-hedeya/&sa=D&source=docs&ust=1749762960184492&usg=AOvVaw34_3nO96XZOMrUAXpH5wGO), Acting Regional Representative for the [Arab States at UN-Habitat](https://unhabitat.org/arab-states-region), and Mr Gilles Roussel, President of Université Gustave Eiffel.",
+          "It was held in the presence of [Mr Thani Mohamed Soilihi](https://www.diplomatie.gouv.fr/fr/les-ministres/thani-mohamed-soilihi/biographie/), Secretary of State for Francophonie and International Partnerships at the [Ministry for Europe and Foreign Affairs](https://www.diplomatie.gouv.fr/fr/); [Mr Damien Botteghi](https://attributionlogementsocialetdalo.logement.gouv.fr/m-damien-botteghi-nouveau-directeu), Director of Housing, Urban Planning and Landscapes at the [Ministry for Ecological Transition, Energy, Climate and Risk Prevention](https://www.ecologie.gouv.fr/); Mr [Jérôme Gleizes](https://www.paris.fr/pages/gleizes-jerome-2284), elected representative of the City of Paris and President of EIVP; and Mr [Franck Jung](https://www.letudiant.fr/educpros/personnalites/jung-franck.html), Director of [EIVP](https://www.eivp-paris.fr/).",
+          "Also present were Ms Aïda Robbana, Head of the [UN-Habitat office in Tunisia](https://unhabitat.org/fr/tunisie); Ms Amina Béji-Bécheur, Professor and Director of International Affairs at EIVP, and Vice-President for MENA International Relations at Université Gustave Eiffel."
+        ]
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "imageLegende": true,
+    "dansActualites": true,
+    "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
+    "groupe": "fr/signature-de-la-chaire-novembre-2024",
+    "date": "2024-11-01",
+    "id": "chair-signing-ceremony-november-2024",
+    "lien": "en/events/seminars-and-conferences/chair-signing-ceremony-november-2024.html",
+    "actualite": "chair-signing-ceremony-november-2024"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cles-recherche-partenariale",
+    "date": "2026-08-01",
+    "pays": ["France"],
+    "type": "Global Fepport",
+    "titre": "LES CLÉS POUR UNE RECHERCHE PARTENARIALE RÉUSSIE Retours d'expériences individuelles et collectives en sciences de gestion",
+    "auteurs": "Coordonné par Shérazade Gatfaoui et Éric Gautier Laurent",
+    "description": "Un ouvrage consacré aux pratiques de recherche partenariale, présentant des retours d'expérience et des enseignements issus de projets individuels et collectifs en sciences de gestion.",
+    "image": "images/csm-les-cles-pour-une-recherche-partenariale-reussie-c4746494c4.webp",
+    "imageAlt": "Les clés pour une recherche partenariale réussie",
+    "categorie": "ouvrages-et-articles-scientifiques",
+    "langue": "fr"
+  },
+  {
+    "id": "organisations-alternatives-citoyennetes",
+    "date": "2026-06-01",
+    "type": "Global Fepport",
+    "personnes": ["amina-beji-becheur"],
+    "titre": "ORGANISATIONS ALTERNATIVES DES CITOYENNETÉS Récits d'expériences émancipatrices",
+    "auteurs": "Coordonné par Amina Béji-Bécheur et Audrey Bonnemaizon",
+    "description": "Un recueil de récits consacré aux formes alternatives de citoyenneté et aux expériences collectives qui favorisent l'émancipation et la participation citoyenne.",
+    "image": "images/images-2.webp",
+    "imageAlt": "Organisations alternatives des citoyennetés",
+    "lien": "publications/ouvrages-et-articles-scientifiques/organisations-alternatives-citoyennetes.html",
+    "categorie": "ouvrages-et-articles-scientifiques",
+    "langue": "fr"
+  },
+  {
+    "id": "sociales-solidaires-ecologiques",
+    "date": "2026-05-01",
+    "type": "Annual Fepport",
+    "personnes": ["amina-beji-becheur"],
+    "titre": "« Sociales, solidaires, et écologiques ? Tensions et convergences des organisations de l’ESS »",
+    "auteurs": "",
+    "description": "Cette étude examine les tensions et les convergences entre les dimensions sociales, solidaires et écologiques des organisations de l'économie sociale et solidaire.",
+    "image": "images/gess.webp",
+    "imageAlt": "Sociales, solidaires et écologiques",
+    "categorie": "ouvrages-et-articles-scientifiques",
+    "langue": "fr"
+  }
+]

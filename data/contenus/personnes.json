@@ -1,0 +1,351 @@
+[
+  {
+    "id": "aida-robbana",
+    "nom": "Aida ROBBANA",
+    "image": "images/csm-aida-robbana-n-b-c952cf90f3.webp",
+    "lien": "fr/a-propos/membres-partenaires/aida-robbana.html",
+    "imageLegende": true,
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-aida-robbana-n-b-c952cf90f3.webp",
+        "imageLegende": true,
+        "paragraphes": [
+          "Aida ROBBANA est cheffe de bureau ONU-Habitat Tunisie et coordinatrice de la chaire ISCI-MENA depuis 2024.",
+          "Gestionnaire de programme, elle exerce dans le domaine du développement durable depuis 25 ans, expérience qu’elle a notamment aiguisé au PNUD et à la DIRASSET.",
+          "Titulaire d’un doctorat en économie obtenu à l’Université Paris IX Dauphine, elle est spécialiste en stratégie, en planification, en suivi, d’évaluation et en relations publiques."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rania-hedeya",
+    "nom": "Rania HEDEYA",
+    "image": "images/csm-rania-hedeya-n-b-fd4df8e169.webp",
+    "lien": "fr/a-propos/membres-partenaires/rania-hedeya.html",
+    "langue": "fr",
+    "traductions": {
+      "en": {
+        "lien": "en/about/members-and-partners/rania-hedeya.html",
+        "blocs": [
+          {
+            "type": "texte-image",
+            "image": "images/csm-rania-hedeya-n-b-fd4df8e169.webp",
+            "paragraphes": [
+              "Rania HEDEYA est cheffe de bureau ONU-Habitat pour la région MENA (ou ROAS pour Regional Office for Arab States) avec 28 ans d'expérience dans le domaine du développement.",
+              "Elle a débuté sa carrière au Programme des Nations unies pour le développement (PNUD), où elle a acquis des connaissances et une expertise approfondies dans les domaines de la décentralisation et du développement local, avec un accent particulier sur le développement économique local, et avant cela, dans la planification stratégique, le suivi et l'évaluation.",
+              "Directrice du Développement et des Relations Internationales à l’EIVP, Vice-Présidente International déléguée à la région MENA à l’Université, elle est également co-responsable du Master Gestion des Entreprises Sociales et Solidaires.",
+              "En 2013, elle a rejoint ONU-Habitat, où elle a enrichi son expérience dans le domaine du développement en se spécialisant dans le développement urbain durable.",
+              "Rania est également membre du conseil d'administration de plusieurs organismes liés à l'urbanisme, où elle veille à l'alignement des initiatives urbaines en Égypte sur les principes internationaux et les dialogues sur l'urbanisation durable. "
+            ]
+          }
+        ]
+      }
+    },
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-rania-hedeya-n-b-fd4df8e169.webp",
+        "paragraphes": [
+          "Rania HEDEYA est cheffe de bureau ONU-Habitat pour la région MENA (ou ROAS pour Regional Office for Arab States) avec 28 ans d'expérience dans le domaine du développement.",
+          "Elle a débuté sa carrière au Programme des Nations unies pour le développement (PNUD), où elle a acquis des connaissances et une expertise approfondies dans les domaines de la décentralisation et du développement local, avec un accent particulier sur le développement économique local, et avant cela, dans la planification stratégique, le suivi et l'évaluation.",
+          "Directrice du Développement et des Relations Internationales à l’EIVP, Vice-Présidente International déléguée à la région MENA à l’Université, elle est également co-responsable du Master Gestion des Entreprises Sociales et Solidaires.",
+          "En 2013, elle a rejoint ONU-Habitat, où elle a enrichi son expérience dans le domaine du développement en se spécialisant dans le développement urbain durable.",
+          "Rania est également membre du conseil d'administration de plusieurs organismes liés à l'urbanisme, où elle veille à l'alignement des initiatives urbaines en Égypte sur les principes internationaux et les dialogues sur l'urbanisation durable. "
+        ]
+      }
+    ]
+  },
+  {
+    "id": "amina-beji-becheur",
+    "nom": "Amina BÉJI-BÉCHEUR",
+    "image": "images/csm-photo-amina-2021-41746b3669.webp",
+    "lien": "fr/a-propos/membres-partenaires/amina-beji-becheur.html",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-photo-amina-2021-41746b3669.webp",
+        "paragraphes": [
+          "Amina BÉJI-BÉCHEUR est coordinatrice de la chaire ISCI-MENA à l’Université Gustave Eiffel.",
+          "Ce poste est à l'intersection de ses deux principales activités : celle en relations internationales et celle de professeur de gestion.",
+          "Directrice du Développement et des Relations Internationales à l’EIVP, Vice-Présidente International déléguée à la région MENA à l’Université, elle est également co-responsable du Master Gestion des Entreprises Sociales et Solidaires.",
+          "Elle a participé à plusieurs ateliers et projets de la chaire en tant que chercheuse, comme à Béni Khalled ou aux Îles Kerkennah.",
+          "Active dans la vie associative, elle a été présidente de l’Association Française de Marketing."
+        ]
+      }
+    ]
+  },
+  {
+    "nom": "Gaël MAIGNAN",
+    "id": "gael-maignan",
+    "lien": "fr/a-propos/membres-partenaires/gael-maignan.html",
+    "image": "images/photo.webp",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/photo.webp",
+        "paragraphes": ["Ingénieur d'études pour la Chaire ISCI-MENA."]
+      }
+    ]
+  },
+  {
+    "nom": "Lena BESSON",
+    "id": "lena-besson",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/lena-besson.html",
+    "image": "images/csm-lena-besson-n-b-8e94b36754.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-lena-besson-n-b-8e94b36754.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "id": "farah-sayem",
+    "nom": "Farah SAYEM",
+    "lien": "fr/a-propos/membres-partenaires/farah-sayem.html",
+    "imageAlt": "Portrait de Farah Sayem",
+    "image": "images/csm-farah-sayem-n-b-9569f67da9.webp",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-farah-sayem-n-b-9569f67da9.webp",
+        "paragraphes": [
+          "Farah Sayem (1996) est curatrice et opératrice culturelle basée à Tunis. Elle s’intéresse aux dimensions physiques et politiques des espaces urbains, publics et communs, en interrogeant leur lien avec les pratiques sociales et culturelles de leurs habitant·e·s.",
+          "Son travail examine le rôle de ces espaces dans la transformation des paysages urbains. Elle explore également les notions d’autogestion, de communs urbains artistiques et les enjeux politiques de ces structures comme formes de résistance face aux conséquences sociales du néolibéralisme.",
+          "Depuis avril 2020, elle est activement engagée dans la société civile, développant des projets culturels qui promeuvent la démocratisation de l'activité artistique. Son parcours professionnel est axé sur la curation et la gestion de projets. Elle a collaboré avec L’Art Rue sur le festival Dream City, le Collectif Créatif, les Journées Musicales de Carthage, La Boîte : lieu d’architecture et d’art contemporain, Gabes Cinéma Fen, ONU Femmes Tunisie, ainsi que El Warcha collaborative design studio Tunis.",
+          "Farah est titulaire d’un master en design produit (ESSTED) et d’un second master en management social et solidaire (ISG Tunis). Elle a également été membre du collectif TASAWAR CURATORIAL STUDIOS 3."
+        ]
+      }
+    ]
+  },
+  {
+    "nom": "Majdi FRIHI",
+    "id": "majdi-frihi",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/majdi-frihi.html",
+    "image": "images/csm-majdi-frihi-n-b-efac1d57f2.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-majdi-frihi-n-b-efac1d57f2.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Chiraz GAFSIA",
+    "id": "chiraz-gafsia",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/chiraz-gafsia.html",
+    "image": "images/csm-chiraz-gafsia-n-b-59e4451e36.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-chiraz-gafsia-n-b-59e4451e36.webp",
+        "imageLegende": true
+      }
+    ],
+    "traductions": {
+      "en": {
+        "blocs": [
+          {
+            "type": "texte-image",
+            "image": "images/csm-chiraz-gafsia-n-b-59e4451e36.webp",
+            "imageLegende": true
+          }
+        ],
+        "lien": "en/about/members-and-partners/chiraz-gafsia.html"
+      }
+    }
+  },
+  {
+    "nom": "Gilles HUBERT",
+    "id": "gilles-hubert",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/gilles-hubert.html",
+    "image": "images/csm-gilles-hubert-n-b-fcc8a508c5.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-gilles-hubert-n-b-fcc8a508c5.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Saloua FERJANI",
+    "id": "saloua-ferjani",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/saloua-ferjani.html",
+    "image": "images/csm-saloua-ferjani-n-b-f207d32069.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-saloua-ferjani-n-b-f207d32069.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Olfa BEN MEDIEN",
+    "id": "olfa-ben-medien",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/olfa-ben-medien.html",
+    "image": "images/csm-olfa-ben-medien-n-b-e3cbd8a0ab.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-olfa-ben-medien-n-b-e3cbd8a0ab.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Eric GAUTIER-LAURENT",
+    "id": "eric-gautier-laurent",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/eric-gautier-laurent.html",
+    "image": "images/csm-eric-gautier-n-b-1c8789de35.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-eric-gautier-n-b-1c8789de35.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Meriem MAAZOUL",
+    "id": "meriem-maazoul",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/meriem-maazoul.html",
+    "image": "images/csm-meriem-maazoul-n-b-788706277d.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-meriem-maazoul-n-b-788706277d.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Leïla DAMAK",
+    "id": "leila-damak",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/leila-damak.html",
+    "image": "images/csm-leila-damak-n-b2-80084be1fe.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-leila-damak-n-b2-80084be1fe.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Yasmine BOUGHZALA",
+    "id": "yasmine-boughzala",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/yasmine-boughzala.html",
+    "image": "images/csm-yasmine-boughzala-n-b-dd10a45ed9.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-yasmine-boughzala-n-b-dd10a45ed9.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Mariem REKIK",
+    "id": "mariem-rekik",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/mariem-rekik.html",
+    "image": "images/csm-mariem-rekik-n-b-76883a3c82.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-mariem-rekik-n-b-76883a3c82.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Margot PELLEGRINO",
+    "id": "margot-pellegrino",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/margot-pellegrino.html",
+    "image": "images/csm-margot-pellegrino-n-b-d25e9ed73c.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-margot-pellegrino-n-b-d25e9ed73c.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Katia LAFFRECHINE",
+    "id": "katia-laffrechine",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/katia-laffrechine.html",
+    "image": "images/csm-katia-laffrechine-n-b-8e2c5d9116.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-katia-laffrechine-n-b-8e2c5d9116.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Aida NAYER",
+    "id": "aida-nayer",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/aida-nayer.html",
+    "image": "images/csm-aida-anyer-n-b-167682cca0.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-aida-anyer-n-b-167682cca0.webp",
+        "imageLegende": true
+      }
+    ]
+  },
+  {
+    "nom": "Christian PIEL",
+    "id": "christian-piel",
+    "langue": "fr",
+    "lien": "fr/a-propos/membres-partenaires/christian-piel.html",
+    "image": "images/csm-christian-piel-n-b-43cb70af0f.webp",
+    "imageLegende": true,
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-christian-piel-n-b-43cb70af0f.webp",
+        "imageLegende": true
+      }
+    ]
+  }
+]
