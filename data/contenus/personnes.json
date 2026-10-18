@@ -347,5 +347,20 @@
         "imageLegende": true
       }
     ]
+  },
+  {
+    "nom": "Thomas Barré",
+    "id": "thomas-barre",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte-image",
+        "image": "images/csm-thomas-barre-n-b-901a02ee7f.webp",
+        "imageLegende": true
+      }
+    ],
+    "lien": "fr/a-propos/membres-partenaires/thomas-barre.html",
+    "image": "images/csm-thomas-barre-n-b-901a02ee7f.webp",
+    "imageLegende": true
   }
 ]

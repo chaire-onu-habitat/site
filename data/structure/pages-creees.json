@@ -42,14 +42,98 @@
     "liensEnBloc": true,
     "dansAgenda": false,
     "langue": "fr",
+    "groupe": "fr/methode",
     "blocs": [
       {
-        "type": "bouton",
-        "boutonTexte": "En savoir plus",
-        "boutonLien": "fr/a-propos/gouvernance.html"
+        "type": "titre",
+        "texte": "Méthode générale",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "L’**innovation sociale** consiste à partir des besoins des personnes concernées pour remonter vers des solutions réalisables techniquement, pertinentes socialement, ayant un impact environnemental positif et viables sur le plan économique.",
+          "Inscrits dans les [**principes de l’innovation sociale**](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000029315042) et visant **l’atteinte des ODD à un niveau local**, les projets de la chaire sont **construits en relation avec les principaux concernés**, ils visent à produire des connaissances utiles à l’**identification de solutions innovantes** et à **impacts pour les parties prenantes concernées** :",
+          "- I**dentification** d’un problème lié au changement climatique dans la zone MENA (par les agences onusiennes ou les enseignants-chercheurs de l’Université Gustave Eiffel) ;\n- **Diagnostic** du territoire pour identifier les parties prenantes concernées par le problème ;\n- **Définition** plus précise du problème tel que vécu par les parties prenantes concernées ;\n- Constitution d’**équipes pluridisciplinaires** (chercheurs, enseignants, étudiants des établissements membres et partenaires de la chaire, acteurs institutionnels locaux partenaires de la chaire) pour définir les projets de recherche action, ateliers participatifs ou autres formats utiles pour résoudre le problème posé ;\n- Réalisation des activités du projet ;\n- Évaluation de la contribution du projet aux ODD."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Recherche-action",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La recherche-action est une recherche collaborative fondée sur le **dialogue entre des chercheurs et des praticiens**. Elle vise le **développement de connaissances scientifiques** via la résolution d’un problème concret et situé. Elle suppose un **objectif commun**, le **respect des intérêts de chacune des parties**, du **temps long** nécessaire à l’interconnaissance, et de la **confiance**."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Science ouverte",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "L'objectif de la Chaire est de développer de nouvelles connaissances pour découvrir les innovations économiques, sociétales et environnementales de demain dans une approche d'[**open science**](https://www.unesco.org/en/open-science) (science ouverte) telle que définie par l'UNESCO.",
+          "« La science ouverte a pour objectif de rendre accessible et de partager le travail scientifique (publications, données, algorithmes, etc.) auprès du monde de la recherche et du grand public. La science ouverte vise à repenser, valoriser et accompagner les pratiques et démarches de recherche et à associer la société à la production des savoirs. S’engager dans la science ouverte, c’est accepter de faire évoluer ses pratiques de scientifique pour plus de qualité, de transparence de la science, de la recherche et de l’innovation. » [Université Gustave Eiffel](https://www.univ-gustave-eiffel.fr/la-recherche/science-ouverte)"
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Transdisciplinarité",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La Chaire soutient le travail collaboratif des équipes de ses différens membres et partenaires qui opèrent dans des disciplines variées : éco-gestion, génie urbain, urbanisme, économie, architecture, sociologie, etc."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "ODD : Objectif de Développement Durable",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "L'Agenda 2030 pour le développement durable, adopté par tous les **États membres de l'ONU** en 2015, fournit un cadre commun pour la paix et la prospérité des populations et de la planète, aujourd'hui et à l'avenir.",
+          "Il intègre les **17 Objectifs de Développement Durable (ODD ou SDG en anglais) :** des objectifs clairs qui s'appuient sur des décennies de travail des Nations Unies et de ses pays membres. Ils ciblent la pauvreté et les privations via des stratégies visant à améliorer la santé et l'éducation, à réduire les inégalités et à stimuler la croissance économique, tout en s'attaquant au changement climatique et en œuvrant à la préservation de nos océans et de nos forêts. Ils ciblent la pauvreté et les pénuries via des stratégies visant à améliorer la santé et l'éducation, à réduire les inégalités et à stimuler la croissance économique, tout en s'attaquant au changement climatique et en œuvrant à la préservation de nos océans et de nos forêts.",
+          "Chacun des projets de la chaire intègre un ou plusieurs [**Objectifs de Développement Durable**](https://unhabitat.org/about-us/sustainable-development-goals) **(ODD ou SDG en anglais) des Nations Unies**.",
+          "Elle s'intéresse plus particulièrement à l'**ODD 11 : Faire en sorte que les villes et les établissements humains soient ouverts à tous, sûrs, résilients et durables**."
+        ]
+      },
+      {
+        "type": "citation",
+        "paragraphes": [
+          "Le plan stratégique du Programme des établissements humains réaffirme que \"le logement est un droit de l'homme et un bien public\""
+        ],
+        "auteur": "António Guterres",
+        "precision": "Secrétaire général, ONU – Organisations des Nations unies (2025)"
+      },
+      {
+        "type": "image",
+        "image": "images/csm-languages-11-b291623dc7.webp",
+        "imageLegende": true,
+        "largeur": "75"
+      },
+      {
+        "type": "titre",
+        "texte": "L'approche Génie Urbain",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La Chaire ISCI MENA évolue au sein de l'EIVP, la Grande Ecole du Génie Urbain.",
+          "La définition canonique énoncée par Claude Martinand dans son ouvrage [*Annales de la recherche urbaine, 1982*](https://www.persee.fr/issue/aru_0180-930x_1982_num_14_1) est la suivante *:*",
+          "- « Le génie urbain peut être considéré, d’un point de vue strictement technique, comme l’ensemble des techniques nécessaires aux équipements et aux services urbains », ce qui implique d’aborder l’ensemble des composantes qui constituent une ville ;\n- Ces composantes doivent être appréhendées comme un « système urbain qu’il convient de concevoir dans sa globalité (aspects urbanistiques) de réaliser, de faire évoluer et de gérer ou d’exploiter (gestion urbaine) avec toutes ses implications sociales », ce qui suppose d’envisager les interactions de ces composantes entre elles et avec les habitants/usagers ;\n- « La cohabitation », dans un espace encombré, d’équipements relevant de multiples acteurs, est à l’origine de conflits d’usage, ce qui nécessite de « mettre l’accent sur la coordination ».",
+          "Cette définition classique s’est enrichie de réflexions accordant une plus large part aux dimensions d’innovation et de participation citoyenne, ainsi que de questionnements sur les apports du numérique, que l’on trouvera notamment retracés dans l’ouvrage [*Le génie urbain revisité (UE 2016) | Ecole des ingénieurs de la ville de Paris*](https://www.eivp-paris.fr/le-genie-urbain-revisite-ue-2016)."
+        ]
       }
-    ],
-    "groupe": "fr/methode"
+    ]
   },
   {
     "id": "revue-de-presse",
@@ -79,13 +163,14 @@
     "dansActualites": false,
     "blocs": [
       {
-        "type": "titre",
-        "texte": "Titre de la section",
-        "niveau": "2"
+        "type": "image",
+        "image": "images/gouvernance-supervision.svg",
+        "imageLegende": true
       },
       {
-        "type": "texte",
-        "paragraphes": ["sdgsdfg", "sdfgsdfgdsfgsdgf", "ffffff"]
+        "type": "image",
+        "image": "images/gouvernance-comite-de-mise-en-oeuvre.svg",
+        "imageLegende": true
       },
       {
         "type": "liens",
@@ -309,14 +394,14 @@
       }
     ],
     "liensEnBloc": true,
-    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
     "imageLegende": true,
     "dansActualites": true,
     "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
     "lien": "fr/evenements/seminaires-et-conferences/signature-de-la-chaire-novembre-2024.html",
     "actualite": "signature-de-la-chaire-novembre-2024",
     "groupe": "fr/signature-de-la-chaire-novembre-2024",
-    "date": "2024-11-01"
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "date": "2024-11-08"
   },
   {
     "titre": "About the chair",
@@ -480,14 +565,235 @@
       }
     ],
     "liensEnBloc": true,
-    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
     "imageLegende": true,
     "dansActualites": true,
     "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
     "groupe": "fr/signature-de-la-chaire-novembre-2024",
-    "date": "2024-11-01",
     "id": "chair-signing-ceremony-november-2024",
     "lien": "en/events/seminars-and-conferences/chair-signing-ceremony-november-2024.html",
-    "actualite": "chair-signing-ceremony-november-2024"
+    "actualite": "chair-signing-ceremony-november-2024",
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "date": "2024-11-08"
+  },
+  {
+    "id": "jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques",
+    "titre": "JDID, Jalon 1 : Adapter le lotissement El Agba 2 aux changements climatiques",
+    "categorie": "evenements/ateliers-et-stages",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-jdid-slide46-3f66b2ca91.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "date": "2024-06-10",
+    "dansActualites": true,
+    "lien": "fr/evenements/ateliers-et-stages/jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques.html",
+    "actualite": "jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques",
+    "imageLegende": true
+  },
+  {
+    "id": "jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis",
+    "titre": "JDID, Jalon 2 : Vers du logement abordable et durable à Tunis",
+    "categorie": "evenements/ateliers-et-stages",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-workshop-with-locals-el-agba-1e0b7d1917.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Initié en 2023 et conclu en janvier 2025, le **jalon 2** du [projet JDID](https://isci-mena.univ-gustave-eiffel.fr/projects/jdid) s'intéresse à l'**habitat**, au **cadre de vie** et à l’**accès aux services** du complexe immobilier **El Agba 1,** afin de proposer des **enseignements** et des **recommandations** pour **El Agba 2**, l’opération adjacente en cours de conception."
+        ]
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Au terme d'**un an de travail** et d'**un atelier intensif de 10 jours**, les étudiants en architecture, en génie civil et en urbanisme de l'**ENAU**, de l'**ISTEUB** et de l'[**EUP**](https://www.eup.fr/formations/le-master-urbanisme-et-amenagement/m2-urbanisme-et-expertise-internationale) ont produit une **analyse socio-urbaine participative de la Cité Waha** située à El Agba 1. Ils l'ont présentée à l’ISTEUB lors d’une [**restitution publique**](https://www.linkedin.com/feed/update/urn:li:activity:7275833666998611968/)**,** le 12 décembre 2024.",
+          "Les livrables sont **disponibles au téléchargement** ci-dessous."
+        ]
+      },
+      {
+        "type": "documents",
+        "documents": [
+          "1F8CyUrpu2hGLYom1_uToKASrQ2oxM8CG",
+          "1Wz82HizCmACDBOzJ6iYtWYLcJgjZIHIn",
+          "1EImVHWCVQMInWTXZNQnW3gl1J5RRS987"
+        ]
+      },
+      {
+        "type": "video",
+        "media": "1DpZeltQi6bc3_FcJQ7UEuUQK32OHDb8b"
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "date": "2024-12-03",
+    "dansActualites": true,
+    "lien": "fr/evenements/ateliers-et-stages/jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis.html",
+    "actualite": "jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis"
+  },
+  {
+    "id": "gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t",
+    "titre": "GESS 2024 : 11èmes journées de recherche GESS - « Sociales, solidaires, et écologiques ? Tensions et convergences des organisations de l'ESS »",
+    "categorie": "evenements/seminaires-et-conferences",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Les 5 et 6 décembre 2024, les 11ᵉ Journées de recherche GESS se sont tenues à Paris, à l’initiative de l’Université Paris-Est Créteil (UPEC) et de l’Université Gustave Eiffel, au sein de l’Institut de recherche en gestion (IRG).",
+          "Consacré aux tensions et convergences entre les dimensions sociales, solidaires et écologiques des organisations de l’économie sociale et solidaire (ESS), cet événement a réuni des chercheur·euses et des doctorant·es autour des enjeux de la transition écologique. Les échanges ont notamment porté sur les pratiques de gestion des organisations de l’ESS, leurs capacités d’action face à l’urgence environnementale et les modèles alternatifs de gouvernance et de création de valeur.",
+          "À travers des ateliers de discussion, un atelier doctoral et un workshop dédié à l’accompagnement à la publication scientifique, ces journées ont favorisé le dialogue entre travaux de recherche et expériences de terrain, contribuant ainsi au renouvellement des réflexions sur le rôle de l’ESS dans les transitions sociales et écologiques."
+        ]
+      },
+      {
+        "type": "bouton",
+        "boutonTexte": "En savoir plus",
+        "boutonLien": "https://gess2024.sciencesconf.org/?lang=fr",
+        "boutonNouvelOnglet": true
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "date": "2024-12-04",
+    "dansActualites": true,
+    "dansAgenda": true,
+    "dateDebut": "2024-12-05",
+    "dateFin": "2024-12-06",
+    "lieu": "Paris (France)",
+    "lien": "fr/evenements/seminaires-et-conferences/gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t.html",
+    "evenement": "gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t",
+    "actualite": "gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t",
+    "image": "images/gess.webp",
+    "imageLegende": true
+  },
+  {
+    "id": "seminaire-au-caire-du-master-pitet-mai-2025",
+    "titre": "Séminaire au Caire du master PITET - Mai 2025",
+    "categorie": "evenements/seminaires-et-conferences",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-1749645438936-0b49671db8.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Le Caire est l'une des mégapoles les plus peuplées d'Afrique et du Moyen-Orient, avec plus de **20 millions d'habitants**. Son développement urbain a été peu planifié, générant des **quartiers informels**, un **trafic saturé**, une **pression sur les services publics** mais surtout, une **forte pollution**.",
+          "Afin d’en faire une ville moderne, verte, durable et fonctionnelle d’ici 2050, l’État égyptien lance **« Le Caire 2050 »**, un plan stratégique national de réaménagement et de développement urbain visant à **repenser la métropole du Caire à l’horizon 2050**.",
+          "Grâce à la signature de la **Chaire ISCI MENA** au Caire en novembre 2024, Le Master PITET (*Pilotage et ingénierie de la transformation écologique des territoires*) a eu l’opportunité de se rendre sur place du 11 au 17 mai 2025 lors de son séminaire d’études annuel. Le réseau de la Chaire lui a donné un **accès privilégié** à la visite de certains sites comme le célèbre Mokattam."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Le master PITET",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Fondé en 2005, le [__master PITET__](https://formations.univ-gustave-eiffel.fr/master/detail/pilotage-et-ingenierie-de-la-transformation-ecologique-des-territoires-34) a pour but de former les étudiants en BAC+3 et BAC + 5 aux fonctions de **responsable d’exploitation d’un service à l’environnement dans les domaines de l’eau et des déchets**. Il est co-accrédité par l’Université Gustave Eiffel et l’université Cergy Pontoise (CYU) et bénéficie d’un partenariat privilégié avec la société Veolia.",
+          "Un séminaire d’études est organisé tous les ans par l'équipe encadrante. Son ambition est de confronter les étudiant·es à des problématiques contemporaines tout en leur permettant d’échanger avec des experts, à des acteurs locaux, et autres étudiant·es issus de divers horizons académiques et culturels.",
+          "Cette année, grâce au réseau de la Chaire ISCI MENA, le séminaire d’étude s’est déroulé au Caire du 11 au 17 mai 2025. Il avait pour thème la **gestion durable de l'eau et des déchets solides dans le contexte de la transition écologique en Egypte**.",
+          "Une quinzaine d'étudiants se sont envolés rive Sud encadrés par les co-responsables du master Katia LAFFRECHINE et Virginie ENGRAND LINDER."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Les partenaires de la Chaire ISCI MENA",
+        "niveau": "2"
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "date": "2024-05-11",
+    "dansActualites": true,
+    "lien": "fr/evenements/seminaires-et-conferences/seminaire-au-caire-du-master-pitet-mai-2025.html",
+    "actualite": "seminaire-au-caire-du-master-pitet-mai-2025"
+  },
+  {
+    "id": "publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes",
+    "titre": "Publication de l'ouvrage : ORGANISATIONS ALTERNATIVES DES CITOYENNETÉS",
+    "categorie": "publications/ouvrages-et-articles-scientifiques",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "image",
+        "image": "images/csm-mock-up-ouvrage-d0c4bf418c.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "**Ouvrage labellisé FNEGE (2025), catégorie « Ouvrage de recherche collectif »**",
+          "****L'ouvrage a également obtenu le prix coup de coeur du jury du meilleur ouvrage scientifique collectif de Syntec-Conseil et Fnege en 2025.****",
+          "Les organisations alternatives des citoyennetés sont développées par, ou avec, des citoyens qui expérimentent collectivement et localement de nouvelles manières de produire, d’habiter, de manger, de consommer, en réponse à des problématiques environnementales et sociales. Alternatives au capitalisme industriel et technologique, elles ont pour dénominateur commun un engagement dans une lutte pacifiste face aux acteurs dominants.",
+          "Derrière les façades de la participation citoyenne heureuse, comment les citoyens s’organisent-ils ? Ont-ils les moyens de développer leurs projets de changement ou sont-ils à leur tour les instruments d’une fabrique institutionnelle de l’illusion de la participation citoyenne qui les maintient en marge ?",
+          "C’est à ces questions que nous souhaitons répondre à travers quatorze histoires en France, au Maroc et en Tunisie. Ces organisations s’écartent des chemins balisés du système dominant actuel, capitaliste, extractif ou individualiste. Elles se situent dans les « interstices » des cités, là où il est encore possible pour des personnes concernées et engagées de trouver des moyens d’exprimer librement leurs désirs, de débattre, de faire des choix, de les réaliser, de les mettre en commun.",
+          "Ces histoires illustrent la fabrique de l’utopie concrète par les actions qui la structurent :",
+          "- Construire l’alternative, une question de bon sens ;\n- Agencer la participation citoyenne au service de l’alternative ;\n- Agir dans les interstices des cadres institutionnels et les modifier ;\n- S’engager collectivement pour transformer l’écosystème.",
+          "*Coordonné par Amina Béji-Bécheur et Audrey Bonnemaizon, cet ouvrage comprend les contributions de Hélène Beraud, Salomon Bernier-Khedache, Barbara Blin-Barrois, Inès Bouden, Yasmine Boughzala, Emanuela Dalmasso, Asmae Diani, Amal Sofia Dyntsikou, Ghassan Waïl El Karmouni, Hajar El Karmouni, Éric Fiat, Éric Gautier Laurent, Sylvia Gossmann, Hamed Haddouche, Fabien Hildwein, Gilles Hubert, Evelyne Lhoste, Meriem Maazoul, Marion Maignan, Sarra Mokaddem, Sabrina Nassih, Lorreine Petters, Alix Poels et Sandra Renou, ainsi que les illustrations de Léna Marty et Camille Messager.*"
+        ]
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "dansActualites": true,
+    "lien": "fr/publications/ouvrages-et-articles-scientifiques/publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes.html",
+    "actualite": "publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes",
+    "personnes": ["amina-beji-becheur"],
+    "date": "2025-06-11"
+  },
+  {
+    "id": "nuit-de-idees-juin-2025",
+    "titre": "Nuit de Idées - Juin 2025",
+    "categorie": "evenements/seminaires-et-conferences",
+    "langue": "fr",
+    "blocs": [
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Une nuit par an, l’**Institut français** invite tous les lieux de culture et de savoir, en France et sur les cinq continents, à célébrer ensemble la libre circulation des idées et des savoirs.",
+          "En 2025, l’[Institut français de Tunisie](https://www.institutfrancais-tunisie.com/#/) présente l’ouvrage *«* [***Organisations alternatives des citoyennetés***](https://isci-mena.univ-gustave-eiffel.fr/publications/ouvrages-et-articles-scientifiques#c77587) *»*, qui a obtenu le **prix coup de coeur du jury** du meilleur ouvrage scientifique collectif de Syntec-Conseil et Fnege en 2025.",
+          "La soirée s'est ouverte après un discours de Madame Anne GUÉGUEN, Ambassadrice de France en Tunisie."
+        ]
+      },
+      {
+        "type": "liens",
+        "depuisPage": true
+      }
+    ],
+    "liensEnBloc": true,
+    "date": "2025-06-27",
+    "image": "images/csm-2025-06-27-nuit-des-idees2-eef0caa684.webp",
+    "imageLegende": true,
+    "dansActualites": true,
+    "lien": "fr/evenements/seminaires-et-conferences/nuit-de-idees-juin-2025.html",
+    "actualite": "nuit-de-idees-juin-2025",
+    "personnes": ["farah-sayem", "yasmine-boughzala"]
   }
 ]

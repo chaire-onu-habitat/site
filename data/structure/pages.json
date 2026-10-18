@@ -1,6 +1,6 @@
 {
   "description": "Répertoire des pages internes du site, généré par le gestionnaire (ne pas modifier à la main).",
-  "genere": "2026-10-18T16:43:53.175Z",
+  "genere": "2026-10-18T22:04:29.565Z",
   "categories": [
     {
       "id": "",
@@ -229,6 +229,14 @@
           "date": "2026-10-18"
         },
         {
+          "chemin": "fr/a-propos/membres-partenaires/thomas-barre.html",
+          "titre": "Thomas Barré",
+          "type": "personne",
+          "id": "thomas-barre",
+          "langue": "fr",
+          "date": "2026-10-18"
+        },
+        {
           "chemin": "fr/a-propos/membres-partenaires/yasmine-boughzala.html",
           "titre": "Yasmine BOUGHZALA",
           "type": "personne",
@@ -340,17 +348,64 @@
       ]
     },
     {
+      "id": "evenements/ateliers-et-stages",
+      "titre": "Évènements › Ateliers et stages",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/evenements/ateliers-et-stages/jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis.html",
+          "titre": "JDID, Jalon 2 : Vers du logement abordable et durable à Tunis",
+          "type": "page",
+          "id": "jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis",
+          "langue": "fr",
+          "date": "2024-12-03"
+        },
+        {
+          "chemin": "fr/evenements/ateliers-et-stages/jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques.html",
+          "titre": "JDID, Jalon 1 : Adapter le lotissement El Agba 2 aux changements climatiques",
+          "type": "page",
+          "id": "jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques",
+          "langue": "fr",
+          "date": "2024-06-10"
+        }
+      ]
+    },
+    {
       "id": "evenements/seminaires-et-conferences",
       "titre": "Évènements › Séminaires et conférences",
       "langue": "fr",
       "pages": [
+        {
+          "chemin": "fr/evenements/seminaires-et-conferences/nuit-de-idees-juin-2025.html",
+          "titre": "Nuit de Idées - Juin 2025",
+          "type": "page",
+          "id": "nuit-de-idees-juin-2025",
+          "langue": "fr",
+          "date": "2025-06-27"
+        },
+        {
+          "chemin": "fr/evenements/seminaires-et-conferences/gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t.html",
+          "titre": "GESS 2024 : 11èmes journées de recherche GESS - « Sociales, solidaires, et écologiques ? Tensions et convergences des organisations de l'ESS »",
+          "type": "page",
+          "id": "gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t",
+          "langue": "fr",
+          "date": "2024-12-04"
+        },
         {
           "chemin": "fr/evenements/seminaires-et-conferences/signature-de-la-chaire-novembre-2024.html",
           "titre": "Signature de la Chaire - Novembre 2024",
           "type": "page",
           "id": "signature-de-la-chaire-novembre-2024",
           "langue": "fr",
-          "date": "2024-11-01"
+          "date": "2024-11-08"
+        },
+        {
+          "chemin": "fr/evenements/seminaires-et-conferences/seminaire-au-caire-du-master-pitet-mai-2025.html",
+          "titre": "Séminaire au Caire du master PITET - Mai 2025",
+          "type": "page",
+          "id": "seminaire-au-caire-du-master-pitet-mai-2025",
+          "langue": "fr",
+          "date": "2024-05-11"
         }
       ]
     },
@@ -374,6 +429,21 @@
           "id": "revue-de-presse",
           "langue": "fr",
           "date": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "id": "publications/ouvrages-et-articles-scientifiques",
+      "titre": "Publications › Ouvrages et articles scientifiques",
+      "langue": "fr",
+      "pages": [
+        {
+          "chemin": "fr/publications/ouvrages-et-articles-scientifiques/publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes.html",
+          "titre": "Publication de l'ouvrage : ORGANISATIONS ALTERNATIVES DES CITOYENNETÉS",
+          "type": "page",
+          "id": "publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes",
+          "langue": "fr",
+          "date": "2025-06-11"
         }
       ]
     },
@@ -487,7 +557,7 @@
           "type": "page",
           "id": "chair-signing-ceremony-november-2024",
           "langue": "en",
-          "date": "2024-11-01"
+          "date": "2024-11-08"
         }
       ]
     }

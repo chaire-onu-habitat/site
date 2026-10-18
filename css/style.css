@@ -5270,3 +5270,105 @@ body.pdf-sans-defilement { overflow: hidden; }
     --gouttiere: 15px;
   }
 }
+
+/* #####################################################################
+   Blocs « Vidéo » et « Son » (gestionnaire des médias, relais /stream)
+   ##################################################################### */
+.bloc-video__figure {
+  margin: 0;
+}
+
+.bloc-video__lecteur {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 4px;
+}
+
+.bloc-video--75 .bloc-video__figure { width: 75%; margin: 0 auto; }
+.bloc-video--50 .bloc-video__figure { width: 50%; margin: 0 auto; }
+
+.bloc-video__figure .legende {
+  margin-top: 10px;
+}
+
+.bloc-son__carte {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border: 1px solid #e3e2ef;
+  border-left: 4px solid #2F2A85;
+  border-radius: 6px;
+  background: #fafafe;
+}
+
+.site-section--dark .bloc-son__carte {
+  border-color: rgba(255, 255, 255, .25);
+  border-left-color: #fff;
+  background: rgba(255, 255, 255, .06);
+}
+
+.bloc-son__icone {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #2F2A85;
+  color: #fff;
+}
+
+.bloc-son__corps {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.bloc-son__titre {
+  margin: 0 0 8px;
+  font-weight: 700;
+  color: var(--section-title-color, #111);
+}
+
+.bloc-son__lecteur {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+.bloc-son__telecharger {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2F2A85;
+}
+
+.site-section--dark .bloc-son__telecharger { color: #fff; }
+
+@media (max-width: 600px) {
+  .bloc-video--75 .bloc-video__figure,
+  .bloc-video--50 .bloc-video__figure { width: 100%; }
+
+  .bloc-son__carte { gap: 12px; padding: 14px; }
+  .bloc-son__icone { width: 38px; height: 38px; }
+}
+
+/* Vidéo et son : même enchaînement que les textes, images et documents
+   (écart réduit avec les blocs de contenu voisins) */
+.bloc:is(.bloc--texte, .bloc--texte-image, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son):has(+ .bloc:is(.bloc--texte, .bloc--texte-image, .bloc--image, .bloc--titre, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son)) > .site-section:not(.bloc--gris):not(.site-section--dark),
+.bloc:is(.bloc--texte, .bloc--texte-image, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son):has(+ .isci-ajout + .bloc:is(.bloc--texte, .bloc--texte-image, .bloc--image, .bloc--titre, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son)) > .site-section:not(.bloc--gris):not(.site-section--dark) {
+  padding-bottom: 18px;
+}
+
+.bloc:is(.bloc--texte, .bloc--texte-image, .bloc--image, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son) + .bloc:is(.bloc--texte, .bloc--texte-image, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son) > .site-section:not(.bloc--gris):not(.site-section--dark),
+.bloc:is(.bloc--texte, .bloc--texte-image, .bloc--image, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son) + .isci-ajout + .bloc:is(.bloc--texte, .bloc--texte-image, .bloc--citation, .bloc--documents, .bloc--video, .bloc--son) > .site-section:not(.bloc--gris):not(.site-section--dark) {
+  padding-top: 0;
+}
+
+.bloc:is(.bloc--video, .bloc--son) + .bloc--titre > .site-section:not(.bloc--gris):not(.site-section--dark),
+.bloc:is(.bloc--video, .bloc--son) + .isci-ajout + .bloc--titre > .site-section:not(.bloc--gris):not(.site-section--dark) {
+  padding-top: 24px;
+}

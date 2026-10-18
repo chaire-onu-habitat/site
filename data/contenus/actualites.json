@@ -1,26 +1,98 @@
 [
   {
+    "id": "nuit-de-idees-juin-2025",
+    "titre": "Nuit de Idées - Juin 2025",
+    "langue": "fr",
+    "image": "images/csm-2025-06-27-nuit-des-idees2-eef0caa684.webp",
+    "imageLegende": true,
+    "date": "2025-06-27",
+    "categorie": "seminaires-et-conferences",
+    "lien": "fr/evenements/seminaires-et-conferences/nuit-de-idees-juin-2025.html",
+    "groupe": "fr/nuit-de-idees-juin-2025",
+    "personnes": ["farah-sayem", "yasmine-boughzala"]
+  },
+  {
+    "id": "publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes",
+    "titre": "Publication de l'ouvrage : ORGANISATIONS ALTERNATIVES DES CITOYENNETÉS",
+    "langue": "fr",
+    "categorie": "ouvrages-et-articles-scientifiques",
+    "lien": "fr/publications/ouvrages-et-articles-scientifiques/publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes.html",
+    "groupe": "fr/publication-de-l-ouvrage-organisations-alternatives-des-citoyennetes",
+    "personnes": ["amina-beji-becheur"],
+    "date": "2025-06-11",
+    "imageAuto": true,
+    "image": "images/csm-mock-up-ouvrage-d0c4bf418c.webp",
+    "imageLegende": true
+  },
+  {
+    "id": "seminaire-au-caire-du-master-pitet-mai-2025",
+    "titre": "Séminaire au Caire du master PITET - Mai 2025",
+    "langue": "fr",
+    "date": "2024-05-11",
+    "categorie": "seminaires-et-conferences",
+    "lien": "fr/evenements/seminaires-et-conferences/seminaire-au-caire-du-master-pitet-mai-2025.html",
+    "groupe": "fr/seminaire-au-caire-du-master-pitet-mai-2025",
+    "imageAuto": true,
+    "image": "images/csm-1749645438936-0b49671db8.webp",
+    "imageLegende": true
+  },
+  {
+    "id": "gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t",
+    "titre": "GESS 2024 : 11èmes journées de recherche GESS - « Sociales, solidaires, et écologiques ? Tensions et convergences des organisations de l'ESS »",
+    "langue": "fr",
+    "date": "2024-12-04",
+    "categorie": "seminaires-et-conferences",
+    "lien": "fr/evenements/seminaires-et-conferences/gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t.html",
+    "groupe": "fr/gess-2024-11emes-journees-de-recherche-gess-sociales-solidaires-et-ecologiques-t",
+    "image": "images/gess.webp",
+    "imageLegende": true
+  },
+  {
+    "id": "jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis",
+    "titre": "JDID, Jalon 2 : Vers du logement abordable et durable à Tunis",
+    "langue": "fr",
+    "date": "2024-12-03",
+    "categorie": "ateliers-et-stages",
+    "lien": "fr/evenements/ateliers-et-stages/jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis.html",
+    "groupe": "fr/jdid-jalon-2-vers-du-logement-abordable-et-durable-a-tunis",
+    "imageAuto": true,
+    "image": "images/csm-workshop-with-locals-el-agba-1e0b7d1917.webp",
+    "imageLegende": true
+  },
+  {
+    "id": "jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques",
+    "titre": "JDID, Jalon 1 : Adapter le lotissement El Agba 2 aux changements climatiques",
+    "langue": "fr",
+    "date": "2024-06-10",
+    "categorie": "ateliers-et-stages",
+    "lien": "fr/evenements/ateliers-et-stages/jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques.html",
+    "groupe": "fr/jdid-jalon-1-adapter-le-lotissement-el-agba-2-aux-changements-climatiques",
+    "imageLegende": true,
+    "imageAuto": true,
+    "image": "images/csm-jdid-slide46-3f66b2ca91.webp"
+  },
+  {
     "id": "chair-signing-ceremony-november-2024",
     "titre": "Chair Signing Ceremony - November 2024",
     "langue": "en",
-    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
     "imageLegende": true,
     "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
-    "date": "2024-11-01",
     "categorie": "seminaires-et-conferences",
     "lien": "en/events/seminars-and-conferences/chair-signing-ceremony-november-2024.html",
-    "groupe": "fr/signature-de-la-chaire-novembre-2024"
+    "groupe": "fr/signature-de-la-chaire-novembre-2024",
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "date": "2024-11-08"
   },
   {
     "id": "signature-de-la-chaire-novembre-2024",
     "titre": "Signature de la Chaire - Novembre 2024",
     "langue": "fr",
-    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
     "imageLegende": true,
     "personnes": ["rania-hedeya", "aida-robbana", "chiraz-gafsia", "amina-beji-becheur"],
     "categorie": "seminaires-et-conferences",
     "lien": "fr/evenements/seminaires-et-conferences/signature-de-la-chaire-novembre-2024.html",
-    "date": "2024-11-01",
-    "groupe": "fr/signature-de-la-chaire-novembre-2024"
+    "groupe": "fr/signature-de-la-chaire-novembre-2024",
+    "image": "images/csm-signature-chaire-1-a85ad0932c.webp",
+    "date": "2024-11-08"
   }
 ]

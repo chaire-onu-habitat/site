@@ -1061,6 +1061,16 @@
     return v;
   }
   // Page affichée dans l'aperçu du gestionnaire
+  // Bloc sans rien à afficher (liens vides, média introuvable) : retiré de
+  // la page publiée, pour que les blocs voisins s'enchaînent normalement
+  // (écarts entre blocs) ; dans le gestionnaire, seulement masqué
+  function masquerBlocVide(section, vide) {
+    if (!section) return;
+    section.hidden = vide;
+    const bloc = section.closest(".bloc");
+    if (vide && bloc && !dansGestionnaire()) bloc.remove();
+  }
+
   function dansGestionnaire() {
     try { return window.parent !== window && typeof window.parent.__isciDonneesApercu === "function"; } catch (e) { return false; }
   }
@@ -1275,11 +1285,73 @@
   const RELAIS_PDF_DEFAUT = "https://pdf.gael-maignan.workers.dev/";
   const PDFJS = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
 
+  // Relais (worker) des médias : Paramètres du site (navigation.json,
+  // site.relais), sans « /pdf » ni « /stream ». PDF : relais/pdf/ID ;
+  // son ou vidéo : relais/stream/ID. Anciennes données : relais des PDF
+  // de documents.json (relais + ID).
   async function donneesDocuments() {
-    const d = await charger("structure/documents").catch(() => null);
-    const relais = String((d && d.relais) || RELAIS_PDF_DEFAUT).replace(/\/?$/, "/");
+    const [d, nav] = await Promise.all([
+      charger("structure/documents").catch(() => null),
+      charger("structure/navigation").catch(() => null),
+    ]);
+    const nettoyer = (r) => String(r || "").trim().replace(/\/+$/, "").replace(/\/(pdf|stream)$/i, "");
+    const relais = nettoyer(nav && nav.site && nav.site.relais);
+    const ancien = String((d && d.relais) || RELAIS_PDF_DEFAUT).replace(/\/?$/, "/");
+    const base = relais || nettoyer(ancien);
     const liste = (d && Array.isArray(d.documents) ? d.documents : []).filter(publie);
-    return { liste, url: (doc) => relais + encodeURIComponent(doc.id) };
+    return {
+      liste,
+      videos: (d && Array.isArray(d.videos) ? d.videos : []).filter(publie),
+      sons: (d && Array.isArray(d.sons) ? d.sons : []).filter(publie),
+      url: (doc) => (relais ? `${relais}/pdf/${encodeURIComponent(doc.id)}` : ancien + encodeURIComponent(doc.id)),
+      flux: (m) => `${base}/stream/${encodeURIComponent(m.id)}`,
+    };
+  }
+
+  /* ---------------------------------------------------------
+     VIDÉO et SON (blocs « Vidéo » et « Son »)
+     ---------------------------------------------------------
+     Fichier Google Drive du gestionnaire des médias (documents.json,
+     "videos" / "sons"), lu par le relais (relais/stream/ID) : lecteur du
+     navigateur (lecture, avance et retour rapides, plein écran).
+     --------------------------------------------------------- */
+  async function construireMedia(zone) {
+    const cat = zone.dataset.media === "sons" ? "sons" : "videos";
+    const id = zone.dataset.mediaId || "";
+    const edition = zone.dataset.edition === "1";
+    const vide = (texte) => `<div class="isci-media-vide" style="display:grid;place-items:center;min-height:${cat === "videos" ? 220 : 90}px;background:#eef0f6;color:#6b6f85;font:600 14px/1.4 Roboto,Arial,sans-serif;text-align:center;padding:20px;border-radius:6px;cursor:pointer">${texte}</div>`;
+    try {
+      const donnees = await donneesDocuments();
+      const m = id ? donnees[cat].find((x) => x.id === id) : null;
+      const section = zone.closest("section");
+      if (!m) {
+        if (edition) zone.innerHTML = vide(cat === "videos" ? "Cliquer pour choisir une vidéo" : "Cliquer pour choisir un son");
+        else masquerBlocVide(section, true);   // rien à lire : bloc absent du site
+        zone.setAttribute("aria-busy", "false");
+        return;
+      }
+      if (section) section.hidden = false;
+      const src = donnees.flux(m);
+      const titre = zone.dataset.titre || m.titre || "";
+      if (cat === "videos") {
+        const affiche = zone.dataset.affiche ? ` poster="${esc(zone.dataset.affiche)}"` : "";
+        zone.innerHTML = `<video class="bloc-video__lecteur" controls preload="metadata" playsinline${affiche} src="${esc(src)}"${titre ? ` aria-label="${esc(titre)}"` : ""}>
+            <a href="${esc(src)}">${esc(titre || t("Vidéo"))}</a>
+          </video>`;
+      } else {
+        zone.innerHTML = `<div class="bloc-son__carte">
+            <span class="bloc-son__icone" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+            <div class="bloc-son__corps">
+              ${titre ? `<p class="bloc-son__titre">${esc(titre)}</p>` : ""}
+              <audio class="bloc-son__lecteur" controls preload="metadata" src="${esc(src)}"${titre ? ` aria-label="${esc(titre)}"` : ""}></audio>
+              ${zone.dataset.telechargement === "1" ? `<a class="bloc-son__telecharger" href="${esc(urlTelechargement(src))}" download>${esc(t("Télécharger"))}</a>` : ""}
+            </div>
+          </div>`;
+      }
+      zone.setAttribute("aria-busy", "false");
+    } catch (err) {
+      console.error("[contenus] Média :", err);
+    }
   }
 
   const urlTelechargement = (u) => u + (u.includes("?") ? "&" : "?") + "download=1";
@@ -2546,7 +2618,7 @@
       brancherAfficherPlus(zone);
       // Bloc sans personne, projet ni partenaire : section masquée sur le site
       const sectionBlocLiens = zone.closest(".bloc-liens");
-      if (sectionBlocLiens) sectionBlocLiens.hidden = !edition && !zone.innerHTML.trim();
+      if (sectionBlocLiens) masquerBlocVide(sectionBlocLiens, !edition && !zone.innerHTML.trim());
       if (edition) zone.dispatchEvent(new CustomEvent("contenus:fiche", { bubbles: true }));
     } catch (err) {
       console.error("[contenus] Personnes et projets de la page :", err);
@@ -2737,13 +2809,31 @@
     return cache[source];
   }
 
+  // Projets et personnes sans image d'aperçu : la première image de leur
+  // page (blocs « Image », « Texte et image ») sert d'image (cartes, listes,
+  // carrousel), comme dans les réglages du gestionnaire (« automatique »)
+  function premiereImageBlocs(blocs) {
+    for (const b of Array.isArray(blocs) ? blocs : []) {
+      if (b && b.publie !== false && (b.type === "image" || b.type === "texte-image") && b.image) return b;
+    }
+    return null;
+  }
+  function imagesParDefaut(source, d) {
+    if ((source !== "projets" && source !== "personnes") || !Array.isArray(d)) return d;
+    return d.map((o) => {
+      if (!o || o.image) return o;
+      const b = premiereImageBlocs(o.blocs);
+      return b ? { ...o, image: b.image, ...(b.imageLegende ? { imageLegende: true } : {}), imageAuto: true } : o;
+    });
+  }
+
   // Données dans la langue de la page (voir SITE MULTILINGUE)
   const localises = new Map();   // source -> { brut, promesse }
   function charger(source) {
     const brut = chargerBrut(source);
     const connu = localises.get(source);
     if (connu && connu.brut === brut) return connu.promesse;
-    const promesse = determinerLangue().then(() => brut).then((d) => localiser(source, d));
+    const promesse = determinerLangue().then(() => brut).then((d) => localiser(source, d)).then((d) => imagesParDefaut(source, d));
     localises.set(source, { brut, promesse });
     return promesse;
   }
@@ -2993,6 +3083,16 @@
       `${enteteBloc(b)}<div data-liste="${esc(b.source || "publications")}"${attrBloc("data-liste-projets", listeIds(b.projets))}${attrBloc("data-liste-personnes", listeIds(b.personnes))}${attrBloc("data-liste-categorie", b.categorie)}${attrBloc("data-limit", b.nombre)} aria-busy="true"></div>`),
 
     // Documents PDF (data/structure/documents.json) : consulter ou télécharger
+    // Vidéo, son : fichier du gestionnaire des médias, lu par le relais
+    "video": (b, ctx = {}) => sectionBloc(b, "bloc-media bloc-video" + (["75", "50"].includes(String(b.largeur)) ? ` bloc-video--${b.largeur}` : ""),
+      `<figure class="bloc-video__figure">
+        <div class="bloc-video__cadre" data-media="videos"${attrBloc("data-media-id", b.media)}${attrBloc("data-affiche", b.affiche ? url(b.affiche) : "")}${ctx.edition ? ' data-edition="1"' : ""} aria-busy="true"></div>
+        ${b.legende ? `<figcaption class="legende">${esc(b.legende)}</figcaption>` : ""}
+      </figure>`),
+
+    "son": (b, ctx = {}) => sectionBloc(b, "bloc-media bloc-son",
+      `<div class="bloc-son__zone" data-media="sons"${attrBloc("data-media-id", b.media)}${attrBloc("data-titre", b.legende)}${b.telechargement ? ' data-telechargement="1"' : ""}${ctx.edition ? ' data-edition="1"' : ""} aria-busy="true"></div>`),
+
     "documents": (b) => sectionBloc(b, "bloc-documents",
       `<ul class="documents" data-documents="${esc(listeIds(b.documents))}" aria-busy="true"></ul>`),
 
@@ -3225,6 +3325,7 @@
     trouver("[data-carrousel]").forEach(construireCarrousel);
     trouver("[data-agenda]").forEach(construireAgenda);
     trouver("[data-documents]").forEach(construireDocuments);
+    trouver("[data-media]").forEach(construireMedia);
     trouver("[data-projet]").forEach(construireProjet);
     trouver("[data-personne]").forEach(construirePersonne);
     trouver("[data-categorie]").forEach(construireCategorie);

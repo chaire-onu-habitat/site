@@ -3,31 +3,103 @@
     "id": "medina-de-tunis",
     "pays": ["tunisie"],
     "titre": "Médina de Tunis",
-    "image": "images/csm-rue-des-teinturiers-medina-de-tunis-avant-1900-0833d7-small-5b637d9bd4-2.webp",
-    "partenaires": ["un-habitat", "eivp", "lab-urba"],
+    "image": "images/csm-panorama-medina-de-tunis-eb0928f4f8.webp",
+    "partenaires": ["un-habitat", "universite-de-tunis", "essect", "uge"],
     "lien": "fr/projets/medina-de-tunis.html",
     "imageLegende": true,
     "langue": "fr",
     "blocs": [
       {
         "type": "image",
-        "image": "images/csm-rue-des-teinturiers-medina-de-tunis-avant-1900-0833d7-small-5b637d9bd4-2.webp",
+        "image": "images/csm-panorama-medina-de-tunis-eb0928f4f8.webp",
         "imageLegende": true
       },
       {
         "type": "texte",
         "paragraphes": [
-          "La Médina de Tunis est patrimoine mondial de l’UNESCO depuis 1979. Connue pour son architecture historique et son artisanat ancestral, depuis 2011, elle rayonne également par une nouvelle activité culturelle bourgeonnante. Cette effusion impulsée par des acteurs non institutionnels, des associations à but non lucratif et des habitants contribue à régénérer la médina.",
-          "Afin de comprendre ce mécanisme, les chercheurs Eric GAUTIER LAURENT (Université Gustave Eiffel) et Meriem MAAZOUL (ESSEC Tunis) ont conduit une ethnographie au sein de la médina, appuyés par Mariem REKIK (ONU-Habitat Tunis)."
+          "La **Médina de Tunis** est **patrimoine mondial de l’UNESCO** depuis 1979. Connue pour son architecture historique et son artisanat ancestral, depuis 2011, elle rayonne également par une **nouvelle activité culturelle bourgeonnante**. Cette effusion impulsée par des acteurs non institutionnels, des associations à but non lucratif et des habitants contribue à régénérer la médina.",
+          "Afin de comprendre ce mécanisme, les chercheurs Eric GAUTIER LAURENT (Université Gustave Eiffel) et Meriem MAAZOUL (ESSEC Tunis) ont conduit une **ethnographie au sein de la médina**, appuyés par Mariem REKIK (ONU-Habitat Tunis)."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Préambule",
+        "niveau": "2"
+      },
+      {
+        "type": "texte-image",
+        "position": "droite",
+        "paragraphes": [
+          "À l'occasion du mois du Ramadan, la Médina de Tunis devient le terrain d’un festival : « La Médina des Lumières ». Il devient alors possible de circuler dans des bâtiments habituellement inaccessibles, de déambuler à travers expositions et salles de concert, voire même de se faire tatouer… Des activités qui contrastent avec l’image d'Épinal du site.",
+          "Les chercheurs Eric GAUTIER LAURENT et Mariem MAAZOUL ont assisté à la deuxième édition du festival, en septembre 2022. Cette visite a donné lieu à **une étude sur les expériences culturelles citoyennes et la régénération du lien au territoire**. Elle vise à considérer l’engagement d’organisations d’un territoire à une échelle locale ou micro avec des actions d’innovation sociétale.",
+          "Réalisée à partir d’une ethnographie, soit un recueil d’observations et d’entretiens avec les organisateurs et les participants de 2022 à 2023, elle permet d’analyser leurs relations au local et leurs interactions avec l’ensemble des acteurs."
+        ],
+        "image": "images/csm-illustration-couleur-5-47355b532a.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "titre",
+        "texte": "Restauration et protection de la médina au XXème siècle",
+        "niveau": "2"
+      },
+      {
+        "type": "texte-image",
+        "paragraphes": [
+          "En arabe, المدينة **(« médina ») signifie « ville »**. La connotation de « ville historique » apparaît lors de la colonisation. La capitale tunisienne se scinde alors en deux : d’un côté la ville occidentale récemment construite, nouveau centre-ville, de l’autre la médina que les habitants les plus aisés quittent progressivement.",
+          "À la fin des années 1960, le Ministère de l’Urbanisme annonce un projet de route traversant la Médina.",
+          "C’est dans ce contexte qu’une organisation Ad-Hoc est fondée pour sa protection : l’**Association de Sauvegarde de la Médina de Tunis** ou l’ASM, à la suggestion de la Mairie. En 1979, la vieille ville devient **patrimoine mondial de l’UNESCO**. En 2011, elle obtient le **label de vieille ville touristique**.",
+          "En 55 ans, les souks et la *médersas* sont protégés et valorisés."
+        ],
+        "image": "images/csm-rue-des-teinturiers-medina-de-tunis-avant-1900-0833d7-small-5b637d9bd4-2.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "titre",
+        "texte": "Une médina attractive pour l’industrie créative",
+        "niveau": "2"
+      },
+      {
+        "type": "texte-image",
+        "position": "droite",
+        "paragraphes": [
+          "La médina n’est pas seulement un lieu chargé d’Histoire. **Une nouvelle forme de culture, portée par les jeunes**, apparaît.",
+          "La rue Pacha en est un bel exemple. Elle abrite le palais Kheireddine, habitation du Pacha de Tunis au XIXème. Aujourd’hui, le bâtiment est reconverti en musée. On y trouve également une maison d’hôte, une médiathèque, un centre culturel et un espace de coworking.",
+          "**De nombreux événements sont organisés par différentes associations et ONG**. Le matin, les visiteurs peuvent participer à des ateliers, le soir ils écoutent des concerts. Le festival Dream City, par l’Art Rue, présentait une cinquantaine d'œuvres dispersées dans plusieurs lieux (30) de la Médina.",
+          "Ces activités fédèrent et **stimulent la création d’emplois**. 21 micro-entreprises se sont rassemblées au sein d’un groupement d’intérêt.",
+          "La représentation de la Médina évolue **d’une approche patrimoniale et artisanale à un lieu attractif pour l’industrie créative**. Il s’agit de conserver une richesse culturelle historique mais aussi de **la réinsérer dans son contexte socioculturel** présent pour que **les habitants se réapproprient et valorisent le lieu**."
+        ],
+        "image": "images/csm-ruelles-de-la-medina-a-tunis-a33c7cebb7.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "citation",
+        "paragraphes": [
+          "**« *Si cet événement avait été fait dans une salle de théâtre ou de cinéma, ça n’aurait pas été pareil...* »**"
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Une singularité défendue par le collectif",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Lors de leurs entretiens, les chercheurs se sont entendus dire « Si cet événement avait été fait dans une salle de théâtre ou de cinéma, ça n’aurait pas été pareil », il s’agit du « timbre tunisien ». **L’identité emblématique de la Médina maintient et solidifie la communauté culturelle**.",
+          "En 2000, l’ASM engage la régénération des bâtiments historiques de la ville en intégrant la problématique des quartiers informels, avec la participation des artisans locaux. Ils sont en grande partie à l’origine de l’activité culturelle immatérielle (ateliers, événements, etc.).",
+          "Le tournant de 2011 est central dans cette transformation : s’il est nécessaire d’obtenir des autorisations de la part de la mairie pour développer et promouvoir tout événement s’agissant d’un espace public, cette dernière se positionne en arrière-plan, laissant une grande liberté aux acteurs locaux.",
+          "Les mesures prises par l'État pour revitaliser la structure de la médina et pour la représenter dans les médias ont été payantes. L’économie culturelle, le tourisme contrôlé et les projets de revitalisation initiés doivent assurer la préservation du tissu économique et la vie sociale.",
+          "Le lieu constitue un **principe de sens** pour ceux qui l’habitent et il revêt **trois dimensions : identitaire, relationnelle et historique**."
         ]
       }
-    ]
+    ],
+    "personnes": ["eric-gautier-laurent", "meriem-maazoul"]
   },
   {
     "id": "jdid",
     "pays": ["tunisie"],
     "titre": "JDID",
-    "image": "images/csm-slide3-e10f4d9a11.webp",
+    "image": "images/csm-chameau-el-agba-70afef97ce.webp",
     "lien": "fr/projets/jdid.html",
     "imageLegende": true,
     "partenaires": [
@@ -79,15 +151,19 @@
         ],
         "image": "images/csm-slide3-e10f4d9a11.webp",
         "imageLegende": true
+      },
+      {
+        "type": "video",
+        "media": "1DpZeltQi6bc3_FcJQ7UEuUQK32OHDb8b"
       }
     ]
   },
   {
     "id": "plateforme-des-odd",
-    "pays": ["tunisie", "maroc"],
+    "pays": ["tunisie"],
     "titre": "Plateforme des ODD",
     "image": "images/csm-stage-livia-078d89a752.webp",
-    "personnes": ["amina-beji-becheur", "rania-hedeya", "aida-robbana"],
+    "personnes": ["majdi-frihi", "thomas-barre"],
     "lien": "fr/projets/plateforme-des-odd.html",
     "imageLegende": true,
     "langue": "fr",
@@ -100,10 +176,60 @@
       {
         "type": "texte",
         "paragraphes": [
-          "La localisation des Objectifs de Développement Durable (ODD) est un enjeu central de l’Agenda 2030. Pour construire des politiques publiques efficaces, les collectivités locales doivent être capables de mesurer leurs progrès et d’évaluer l’impact de leurs actions sur le développement durable."
+          "La localisation des Objectifs de Développement Durable (ODD) est un enjeu central de l’Agenda 2030. Pour construire des politiques publiques efficaces, les collectivités locales doivent être capables de mesurer leurs progrès et d’évaluer l’impact de leurs actions sur le développement durable.",
+          "Cependant, cette démarche reste complexe. Les données territoriales sont souvent limitées, les indicateurs peu harmonisés et les méthodes d’évaluation traditionnelles rarement adaptées aux réalités locales.",
+          "C'est ce que propose le projet de plateforme de localisation des ODD, réalisé par le laboratoire ERUDITE."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "**Harmoniser la mesure des ODD au niveau local**",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Les recherches récentes montrent une forte diversité des méthodes utilisées dans les **Rapports Volontaires Locaux (RVL)**. Cette hétérogénéité complique la comparaison des résultats et le suivi des ODD entre territoires.",
+          "Notre projet vise à développer un référentiel d’**indicateurs locaux ODD** harmonisé et connecté aux cadres nationaux de suivi. L’objectif est d’améliorer la qualité des données et de fournir aux collectivités des outils fiables pour piloter leurs stratégies de développement durable."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "**Les principales actions**",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "- Recenser les indicateurs et méthodologies utilisés dans les RVL ;\n- Construire une liste harmonisée d’indicateurs locaux ;\n- Assurer la cohérence avec les indicateurs nationaux des ODD ;\n- Former les collectivités à la mesure et au suivi des Objectifs de Développement Durable.",
+          "Cette démarche s’appuie notamment sur les travaux de recherche récents consacrés à l’harmonisation des indicateurs territoriaux et à l’amélioration de la comparabilité des données."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "**Évaluer l’impact des politiques publiques locales**",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Au-delà de la mesure des indicateurs, les collectivités doivent pouvoir évaluer l’efficacité réelle des projets mis en œuvre. Cette évaluation est souvent difficile en raison de la taille limitée des échantillons, de la diversité des territoires et des multiples effets produits par une même action.",
+          "Pour répondre à ces défis, notre projet mobilise les approches les plus récentes d’**évaluation d’impact multidimensionnelle**. Ces méthodes permettent d’analyser simultanément plusieurs résultats économiques, sociaux et environnementaux, offrant ainsi une vision plus complète des effets des politiques publiques."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "**Des outils au service du développement durable local**",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "La Plateforme ODD a pour ambition de renforcer les capacités des collectivités territoriales en matière de mesure des ODD et d’évaluation d’impact. En proposant des indicateurs harmonisés, des outils statistiques adaptés et des formations spécialisées, elle contribue à améliorer la gouvernance locale et à accélérer l’atteinte des Objectifs de Développement Durable."
         ]
       }
-    ]
+    ],
+    "partenaires": ["un-habitat", "uge", "erudite"]
   },
   {
     "id": "iles-kerkennah",
@@ -111,7 +237,7 @@
     "titre": "Îles Kerkennah",
     "image": "images/img-1479.webp",
     "partenaires": ["un-habitat", "eivp", "lab-urba"],
-    "personnes": ["rania-hedeya", "aida-robbana", "amina-beji-becheur"],
+    "personnes": ["amina-beji-becheur", "leila-damak", "mariem-rekik"],
     "lien": "fr/projets/iles-kerkennah.html",
     "imageLegende": true,
     "langue": "fr",
@@ -124,9 +250,36 @@
       {
         "type": "texte",
         "paragraphes": [
-          "Situé dans le golfe de Gabès, en Tunisie, l’archipel des Kerkennah est confronté à la montée des eaux. Plusieurs facteurs humains aggravant la situation. La reconnexion aux pratiques de soin mutuel et aux savoirs endogènes pourrait constituer un levier essentiel pour repenser les stratégies d’adaptation de l'île.",
-          "C’est sur cette solution que se sont penchées trois chercheuses en gestion, marketing et sciences sociales des universités Gustave Eiffel, Bretagne Sud et de Nantes : Mmes Amina BÉJI-BÉCHEUR, IRG ; Leïla DAMAK, LEGO ; Danielle PAILLER, LEMNA). De ce travail est issue une communication scientifique partagée lors d’un colloque à Djerba : « Renforcer la résilience climatique par une approche basée sur le care, les droits culturels et l'innovation sociale. Cas des îles Kerkennah ». Mariem REKIK (ONU-Habitat) assurait la coordination institutionnelle de ce projet."
+          "Situé dans le golfe de Gabès, en Tunisie, **l’archipel des Kerkennah est confronté à la montée des eaux**. Plusieurs facteurs humains aggravant la situation. La reconnexion aux pratiques de soin mutuel et aux savoirs endogènes pourrait constituer un levier essentiel pour repenser les stratégies d’adaptation de l'île.",
+          "C’est sur cette solution que se sont penchées trois chercheuses en gestion, marketing et sciences sociales des universités Gustave Eiffel, Bretagne Sud et de Nantes : Mmes Amina BÉJI-BÉCHEUR, IRG ; Leïla DAMAK, LEGO ; Danielle PAILLER, LEMNA). De ce travail est issue une communication scientifique partagée lors d’un colloque à Djerba : « [__Renforcer la résilience climatique par une approche basée sur le care, les droits culturels et l'innovation sociale. Cas des îles Kerkennah__](https://hal-hceres.archives-ouvertes.fr/LEGO_UBS/halshs-05088736v1) ». Mariem REKIK (ONU-Habitat) assurait la coordination institutionnelle de ce projet.",
+          "Kerkennah s’inscrit dans l’axe thématique 3 « **La protection des patrimoines en danger et la résilience** » de la Chaire."
         ]
+      },
+      {
+        "type": "titre",
+        "texte": "Contexte",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Le réchauffement climatique menace d’engloutir une partie de l’archipel des Kerkennah. Selon une étude alarmante réalisée par le gouvernement tunisien, **30% de sa superficie se retrouverait immergée d’ici 2100**.",
+          "Surexploitation des ressources (dragage illicite de sable et la pêche destructrice au kys), expansion touristique non régulée (et les pollutions associées), fragmentation institutionnelle : **autant de facteurs aggravant sa situation**. Ces dynamiques menacent directement les écosystèmes (récifs coralliens, lagunes), les pratiques culturelles ancestrales (la pêche à la *charfiya*) et la cohésion sociale (migrations informelles, tensions intergénérationnelles, etc.).",
+          "« En quoi, face à des défis systémiques posés par les changements climatiques, trianguler les apports des approches théoriques du **care**, des **droits culturels** et de l’**innovation sociale circulaire** devrait permettre de **répondre aux défis territoriaux d’urgente résilience** ? »."
+        ]
+      },
+      {
+        "type": "citation",
+        "paragraphes": [
+          "Résilience : « Capacité d’une personne ou d’un groupe à se développer bien, à continuer à se projeter dans l’avenir en dépit d’événements déstabilisants, de conditions de vie difficiles, de traumatismes sévères. »"
+        ],
+        "auteur": "Manciaux, M., Vanistendael, Lecomte et Cyrulnik (2001)",
+        "precision": "La résilience : résister et se construire. Genève : Cahiers Médicaux Sociaux"
+      },
+      {
+        "type": "image",
+        "image": "images/csm-img-1469-28fb298da8.webp",
+        "imageLegende": true
       }
     ]
   },
@@ -135,7 +288,7 @@
     "pays": ["tunisie"],
     "titre": "Béni Khalled",
     "image": "images/csm-bk-23-09-07-7dce9718d2.webp",
-    "personnes": ["rania-hedeya", "amina-beji-becheur", "aida-robbana"],
+    "personnes": ["yasmine-boughzala", "amina-beji-becheur", "majdi-frihi", "meriem-maazoul"],
     "lien": "fr/projets/beni-khalled.html",
     "imageLegende": true,
     "langue": "fr",
@@ -148,7 +301,85 @@
       {
         "type": "texte",
         "paragraphes": [
-          "Béni Khalled est une ville tunisienne réputée pour ses oranges. Elle fait face à un problème de déchets sauvages des fruits non calibrés pour la consommation. Pour y remédier, les femmes artisanes de la région ont monté des activités informelles de transformation des déchets d’agrumes."
+          "Béni Khalled est une ville tunisienne réputée pour ses oranges. Elle fait face à un problème de déchets sauvages des fruits non calibrés pour la consommation. Pour y remédier, les femmes artisanes de la région ont monté des **activités informelles de transformation des déchets d’agrumes**.",
+          "Afin de structurer leurs pratiques, l’ONU-Habitat a proposé un projet de recherche action. Trois chercheuses en gestion, management et marketing et des universités Gustave Eiffel et de Tunis (Mmes Amina BÉJI-BÉCHEUR, IRG ; Yasmine BOUGHZALA, ISG et Meriem MAAZOUL, ESSECT) ont mené une **recherche-action** sur deux années avec l’appui d’une chercheuse en agronomie : Mme Dorra GHORBAL. Côté ONU-Habitat, M. Majdi FRIHI assurait le suivi .",
+          "De ce travail est issu un rapport sur les scenarii de développement de nouveaux modèles économiques inscrits dans l’économie circulaire ainsi qu’une communication scientifique lors des [**journées GESS Paris-2024**](https://irg.univ-paris-est.fr/fileadmin/redaction/IRG/Documents/Colloque/Programme_detaille_J_GESS_2024VF-2.pdf) : « Dans quelle mesure le degré de participation aux processus d’innovation sociale a-t-il contribué à l’empowerment collectif des personnes impliquées ? ».",
+          "Les ateliers de recherche action BK 2023 s'inscrivent dans l'axe thématique 2 « **Développement inclusif des territoires par l’économie circulaire** » de la Chaire."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Contexte",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "« *Mon pays est célèbre pour sa production, Le Créateur l'a créé à sa meilleure image, Ses fruits sont toujours appréciés, Désirés dans tous les pays, Ô, mes yeux sur Béni Khalled* » c’est ainsi que la chanteuse Ouleya louait cette terre agricole dans les années 1960. Soixante ans plus tard, **les agrumes de Béni Khalled** n’ont rien perdu de leur superbe et font encore la richesse de cette ville tunisienne située au Nord-Est du pays, au Cap Bon.",
+          "Cependant, en 2025, leur dégradation pose problème. Les **fruits non calibrés pour la consommation de la table** ne sont pas recyclés via un circuit institutionnel et dépérissent sur place. Ils constituent des **déchets sauvages** créant des nuisances sanitaires et environnementales. Cette problématique n’a pas échappé aux **femmes artisanes** de la région qui ont monté des activités informelles de transformation d’agrumes abandonnés.",
+          "Mandatés par l’agence tunisienne de l’**ONU-Habitat** qui a identifié le problème en amont, **trois chercheuses spécialistes en économie et en gestion** se sont rendues sur place, afin d’accompagner ces **artisanes** dans la création d’un **projet entrepreneurial collectif** inscrit dans l’**économie circulaire** des agrumes. Des experts en gestion des déchets ont également été impliqués pour l’évaluation technique."
+        ]
+      },
+      {
+        "type": "titre",
+        "texte": "Étapes",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "**1. Introductions aux pratiques de transformation des déchets**",
+          "L’étude débute avec une présentation bilatérale des activités de transformation d’agrumes : confections des artisanes d’une part, alternatives par une chercheuse en économie circulaire de l’autre. Ensemble, elles ébauchent collectivement des solutions pour transformer les déchets.",
+          "**2. Prise en main des savoirs**",
+          "Les artisanes sont invitées à **définir une stratégie marketing** en groupe pour développer un projet entrepreneurial collectif après **divers exposés scientifiques** :",
+          "- Un diagnostic rudologique ;\n- Une étude sur le marché des agrumes en Tunisie ;\n- Un benchmark sur les modèles d’économie circulaire à base d’agrumes ;\n- Les étapes d’une démarche marketing.",
+          "Elles sont ensuite **formées au leadership féminin** par une consultante de l’ONU Habitat.",
+          "**3. Valorisation du projet**",
+          "Les artisanes valorisent enfin leurs produits artisanaux, à partir d’oranges ou autres, quatre mois plus tard, en présence de la mairie, de l’ONU-Habitat et de l’Association de Sauvegarde de Béni Khalled qui les soutient depuis leurs débuts. Un événement institutionnel a lieu neuf mois plus tard afin de démontrer l’impact du projet auprès du bailleur de fonds du projet ONU-Habitat."
+        ]
+      },
+      {
+        "type": "image",
+        "image": "images/csm-img-1462-008535819d.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "titre",
+        "texte": "Empowerment collectif",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "Les femmes sollicitées ont conçu collectivement une autre voie que celle prescrite par les initiateurs du projet. Cette observation donne lieu à un article universitaire s’articulant autour de la question suivante : « Dans quelle mesure le degré de participation aux processus d’innovation sociale a-t-il contribué à l’empowerment collectif des personnes impliquées ? ».",
+          "***Comment mesurer la participation citoyenne à la recherche-action ?***",
+          "Afin de comprendre le rôle des démarches participatives en recherche pour contribuer à un processus d’empowerment collectif, les chercheuses ont croisé deux clés d’analyse : l’échelle d’Arnstein, qui caractérise la participation citoyenne à des programmes sociaux aux USA et celle de Fayn et al. qui décrit le processus d’émancipation collective."
+        ]
+      },
+      {
+        "type": "image",
+        "image": "images/bk-23-09-20-3-ok.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "image",
+        "image": "images/csm-bk-1-04583b7198.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "image",
+        "image": "images/csm-bk-24-09-3-ok-modifie-modifie-378496e9df.webp",
+        "imageLegende": true
+      },
+      {
+        "type": "titre",
+        "texte": "Calendrier",
+        "niveau": "2"
+      },
+      {
+        "type": "texte",
+        "paragraphes": [
+          "- **Mai 2023 - Rencontre avec les chercheuses**\n- **Juin 2023 - Ateliers**\n- **Septembre 2023 - Restitution de l’étude en plénière**\n- ateliers de réflexion sur la marque fédératrice et les valeurs du collectif\n- **Décembre 2023 - Rencontre avec la mairie de Béni Khalled**\n- valorisation des produits issus de la transformation des agrumes\n- mise en avant d’un premier logo proposé par le groupe d’artisanes\n- **Septembre 2024 - Rencontre avec l'ONU-Habitat et présentation aux bailleurs de fonds**\n- **Janvier 2025 - Cérémonie de lancement de l’association à la mairie en présence des médias locaux**"
         ]
       }
     ],

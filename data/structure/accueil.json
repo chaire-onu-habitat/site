@@ -1,6 +1,6 @@
 {
   "carrousel": {
-    "elements": ["medina-de-tunis"],
+    "elements": ["iles-kerkennah", "medina-de-tunis", "jdid", "plateforme-des-odd", "beni-khalled"],
     "delai": 5000,
     "texteBouton": "En savoir plus"
   },

@@ -321,6 +321,7 @@
     "titres": {
       "en": "UN-Habitat Chair"
     },
-    "url": "https://chaire-onu-habitat.org"
+    "url": "https://chaire-onu-habitat.org",
+    "relais": "https://drive-media.chaire-onu-habitat.workers.dev"
   }
 }
