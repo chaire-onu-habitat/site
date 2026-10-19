@@ -1071,7 +1071,18 @@
     if (vide && bloc && !dansGestionnaire()) bloc.remove();
   }
 
+  /* ---------- Site statique ----------
+     ?export=1 : page ouverte par le gestionnaire pour l'export statique
+     (construite comme sur le site, sans les outils du gestionnaire ni les
+     comportements des scripts de la page, puis enregistrée telle quelle).
+     <html data-statique> : page exportée ; tout est déjà dans le HTML :
+     rien n'est reconstruit, seuls les comportements sont branchés (menu,
+     carrousel, onglets, « Afficher plus », filtres, lecteur PDF…). */
+  const EXPORT = /[?&]export=1\b/.test(location.search);
+  const STATIQUE = document.documentElement.hasAttribute("data-statique");
+
   function dansGestionnaire() {
+    if (EXPORT || STATIQUE) return false;
     try { return window.parent !== window && typeof window.parent.__isciDonneesApercu === "function"; } catch (e) { return false; }
   }
   function htmlLangues(edition = false) {
@@ -1143,8 +1154,10 @@
         zFooter.style.setProperty("--nb-colonnes-footer", cols.length + (reseaux ? 1 : 0));
       }
 
-      surveillerHeader();
-      document.dispatchEvent(new CustomEvent("navigation:prete"));
+      if (!EXPORT) {
+        surveillerHeader();
+        document.dispatchEvent(new CustomEvent("navigation:prete"));
+      }
     } catch (err) {
       console.error("[contenus] Impossible de charger data/structure/navigation.json :", err);
       // Logos d'origine
@@ -1241,7 +1254,10 @@
         // Adresse absolue : dans une variable CSS, url() serait résolue par
         // rapport à css/style.css (où la variable est utilisée), et non par
         // rapport à la page -> "images/x.jpg" deviendrait "css/images/x.jpg".
-        if (a.image) el.style.setProperty("--slide-image", `url("${new URL(encodeURI(a.image), document.baseURI).href}")`);
+        if (a.image) {
+          el.dataset.image = a.image;   // (site statique : adresse recalculée chez le visiteur)
+          el.style.setProperty("--slide-image", `url("${new URL(encodeURI(a.image), document.baseURI).href}")`);
+        }
         el.setAttribute("role", "group");
         el.setAttribute("aria-roledescription", "slide");
         el.setAttribute("aria-label", `${i + 1} sur ${slides.length}`);
@@ -1262,7 +1278,8 @@
         points.appendChild(point);
       });
 
-      document.dispatchEvent(new CustomEvent("carrousel:pret", {
+      hero.dataset.delai = String(Number(reglages.delai) || 6000);   // (site statique : même délai)
+      if (!EXPORT) document.dispatchEvent(new CustomEvent("carrousel:pret", {
         detail: { delai: Number(reglages.delai) || 6000 },
       }));
     } catch (err) {
@@ -1812,9 +1829,34 @@
 
     try {
       const [evenements] = await Promise.all([charger("evenements"), chargerCategories()]);
-      const auj = aujourdhuiISO();
-
       const valides = evenements.filter((ev) => publie(ev) && ev.dateDebut);
+      rendreAgenda(zone, valides);
+      // Export statique : évènements gardés dans la page, pour que « À venir »,
+      // « En cours » et « Passés » suivent la date du jour chez le visiteur
+      if (EXPORT) {
+        const categories = {};
+        valides.forEach((ev) => { if (ev.categorie) categories[ev.categorie] = titreCategorie(ev.categorie); });
+        zone.append(donneesStatiques("agenda__donnees", { evenements: valides, categories }));
+      }
+    } catch (err) {
+      console.error("[contenus] Agenda : impossible de charger data/contenus/evenements.json :", err);
+    }
+  }
+
+  // <script type="application/json"> (données gardées dans une page exportée)
+  function donneesStatiques(classe, valeur) {
+    const s = document.createElement("script");
+    s.type = "application/json";
+    s.className = classe;
+    s.textContent = JSON.stringify(valeur).replace(/</g, "\\u003c");
+    return s;
+  }
+  const lireDonneesStatiques = (el) => { try { return el ? JSON.parse(el.textContent) : null; } catch (e) { return null; } };
+
+  // Agenda (onglets « À venir » / « Passés ») d'après la date du jour
+  function rendreAgenda(zone, valides) {
+    {
+      const auj = aujourdhuiISO();
       const aVenir = valides
         .filter((ev) => (ev.dateFin || ev.dateDebut) >= auj)
         .sort((a, b) => a.dateDebut.localeCompare(b.dateDebut));
@@ -1863,7 +1905,13 @@
 
       zone.innerHTML = `<div class="agenda__onglets" role="tablist" aria-label="${esc(t("Période"))}">${onglets}</div>${contenus}`;
       zone.setAttribute("aria-busy", "false");
+      brancherAgenda(zone);
+    }
+  }
 
+  // Onglets et « Afficher plus » de l'agenda (aussi sur le site statique)
+  function brancherAgenda(zone) {
+    {
       // --- Onglets (clic + flèches du clavier) ---
       const boutons = [...zone.querySelectorAll('[role="tab"]')];
       function activer(btn, focus) {
@@ -1899,9 +1947,6 @@
           else btn.remove();
         });
       });
-
-    } catch (err) {
-      console.error("[contenus] Agenda : impossible de charger data/contenus/evenements.json :", err);
     }
   }
 
@@ -1915,6 +1960,11 @@
   function paginer(conteneur, pas = 5, libelle = t("Afficher plus"), initial = pas) {
     const items = [...conteneur.children];
     conteneur.setAttribute("data-pagine", "");
+    conteneur.dataset.pas = String(pas);
+    conteneur.dataset.initial = String(initial);
+    // Bouton déjà présent (page du site statique) : remplacé
+    const ancien = conteneur.nextElementSibling;
+    if (ancien && ancien.classList.contains("bouton-plus")) ancien.remove();
     if (items.length <= initial) return;
     items.forEach((el, i) => { el.hidden = i >= initial; });
 
@@ -2665,6 +2715,30 @@
       </article>`;
   }
 
+  // Filtres par pays et « Afficher plus » de la liste des projets
+  function brancherFiltresProjets(zone, pas = limiteDe(zone.dataset.limit, 6)) {
+      const grille = zone.querySelector(".pj-grille");
+      if (!grille) return;
+      const toutes = [...grille.children];
+
+      // Affiche les cartes du pays choisi, puis « Afficher plus » par lots
+      const appliquer = (pays) => {
+        const suivant = grille.nextElementSibling;
+        if (suivant && suivant.classList.contains("bouton-plus")) suivant.remove();
+        grille.replaceChildren(...toutes.filter((c) => !pays || c.dataset.pays.split(" ").includes(pays)));
+        grille.querySelectorAll(":scope > [hidden]").forEach((c) => { c.hidden = false; });
+        paginer(grille, pas, t("Afficher plus"), pas);
+      };
+      appliquer("");
+
+      zone.querySelectorAll(".pj-filtre").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          zone.querySelectorAll(".pj-filtre").forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
+          appliquer(btn.dataset.filtre);
+        });
+      });
+  }
+
   async function construireProjets(zone) {
     try {
       const [projets, personnes, publications, actualites] = await Promise.all([
@@ -2723,26 +2797,7 @@
         : contenu;
       zone.setAttribute("aria-busy", "false");
 
-      const grille = zone.querySelector(".pj-grille");
-      if (!grille) return;
-      const toutes = [...grille.children];
-
-      // Affiche les cartes du pays choisi, puis « Afficher plus » par lots
-      const appliquer = (pays) => {
-        const suivant = grille.nextElementSibling;
-        if (suivant && suivant.classList.contains("bouton-plus")) suivant.remove();
-        grille.replaceChildren(...toutes.filter((c) => !pays || c.dataset.pays.split(" ").includes(pays)));
-        grille.querySelectorAll(":scope > [hidden]").forEach((c) => { c.hidden = false; });
-        paginer(grille, pas, t("Afficher plus"), pas);
-      };
-      appliquer("");
-
-      zone.querySelectorAll(".pj-filtre").forEach((btn) => {
-        btn.addEventListener("click", () => {
-          zone.querySelectorAll(".pj-filtre").forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
-          appliquer(btn.dataset.filtre);
-        });
-      });
+      brancherFiltresProjets(zone, pas);
     } catch (err) {
       console.error("[contenus] Tous les projets : impossible de charger les données :", err);
     }
@@ -3293,10 +3348,46 @@
   }
 
   // Les textes alternatifs (petit fichier) sont lus avant de construire les sections
+  // Page du site statique : comportements seulement (le contenu est déjà là)
+  function activerStatique() {
+    sectionsPretes = Promise.resolve();
+    // Langue et textes de la page (gardés à l'export)
+    const infos = lireDonneesStatiques(document.getElementById("isci-statique")) || {};
+    const meta = document.querySelector('meta[name="isci-langue"]');
+    LANGUE = infos.langue || (meta && meta.content) || document.documentElement.lang || LANGUE;
+    TEXTES = infos.textes || {};
+    // Images des diapositives : adresse complète (une variable CSS se lit
+    // depuis css/style.css, une adresse relative n'y mènerait pas)
+    document.querySelectorAll(".hero-slide[data-image]").forEach((el) => {
+      el.style.setProperty("--slide-image", `url("${new URL(encodeURI(el.dataset.image), document.baseURI).href}")`);
+    });
+    // Agenda : évènements répartis selon la date du jour du visiteur
+    document.querySelectorAll("[data-agenda]").forEach((zone) => {
+      const donnees = zone.querySelector(":scope > .agenda__donnees");
+      const d = lireDonneesStatiques(donnees);
+      if (!d || !Array.isArray(d.evenements)) return brancherAgenda(zone);
+      Object.entries(d.categories || {}).forEach(([id, titre]) => TITRES_CATEGORIES.set(id, titre));
+      rendreAgenda(zone, d.evenements);
+      zone.append(donnees);
+    });
+    surveillerHeader();
+    document.dispatchEvent(new CustomEvent("navigation:prete"));
+    const hero = document.querySelector("[data-carrousel]");
+    if (hero && hero.querySelector(".hero-slide")) {
+      document.dispatchEvent(new CustomEvent("carrousel:pret", { detail: { delai: Number(hero.dataset.delai) || 6000 } }));
+    }
+    document.querySelectorAll("[data-projets]:not([data-page-liens])").forEach((z) => { if (z.querySelector(".pj-grille")) brancherFiltresProjets(z); });
+    document.querySelectorAll("[data-pagine]:not(.pj-grille)").forEach((c) => {
+      paginer(c, limiteDe(c.dataset.pas, 5), t("Afficher plus"), limiteDe(c.dataset.initial, limiteDe(c.dataset.pas, 5)));
+    });
+    brancherAfficherPlus(document);
+  }
+
   function init() {
+    if (STATIQUE) return activerStatique();
     // Aperçu du gestionnaire : modifications pas encore enregistrées
     try {
-      const enCours = window.parent !== window && window.parent.__isciDonneesApercu;
+      const enCours = !EXPORT && window.parent !== window && window.parent.__isciDonneesApercu;
       const donnees = typeof enCours === "function" ? enCours() : null;
       if (donnees) Object.entries(donnees).forEach(([source, valeur]) => { cache[source] = Promise.resolve(valeur); });
     } catch (e) { /* page ouverte hors du gestionnaire */ }
@@ -3316,6 +3407,11 @@
     await Promise.all([...document.querySelectorAll("[data-blocs]")].map((zone) => construireBlocs(zone, null, false)));
     activer(document);
     await navigation;   // page « prête » une fois le menu construit (éditeur du gestionnaire)
+    if (EXPORT && !document.getElementById("isci-statique")) {
+      const s = donneesStatiques("", { langue: LANGUE, textes: TEXTES || {} });
+      s.id = "isci-statique";
+      document.body.append(s);
+    }
   }
 
   // Remplit les sections d'une partie de la page (document entier, ou bloc ajouté)
