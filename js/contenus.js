@@ -251,6 +251,7 @@
   let languePrete = null;
   function determinerLangue() {
     if (!languePrete) {
+      if (EXPORT) DEPENDANCES.add("structure/navigation");
       languePrete = chargerBrut("structure/navigation").then((nav) => {
         const site = (nav && nav.site) || {};
         LANGUES = Array.isArray(site.langues) && site.langue ? site.langues.filter(Boolean) : [];
@@ -1080,6 +1081,11 @@
      carrousel, onglets, « Afficher plus », filtres, lecteur PDF…). */
   const EXPORT = /[?&]export=1\b/.test(location.search);
   const STATIQUE = document.documentElement.hasAttribute("data-statique");
+  // Export : données lues par la page (le gestionnaire ne reconstruit
+  // ensuite la page que si l'une d'elles a changé). « source#id » : une
+  // seule entrée du fichier (la page créée elle-même)
+  const DEPENDANCES = new Set();
+  if (EXPORT) window.__isciDependances = DEPENDANCES;
 
   function dansGestionnaire() {
     if (EXPORT || STATIQUE) return false;
@@ -2083,7 +2089,7 @@
     const [type, id] = String((meta && meta.content) || "").split(":");
     if (type !== "page" || !id) return;
     try {
-      const page = (await charger("structure/pages-creees")).find((o) => o.id === id);
+      const page = (await charger("structure/pages-creees", id)).find((o) => o.id === id);
       if (!page) return;
       PAGE_COURANTE ||= { personnes: page.personnes || [], projets: page.projets || [], partenaires: page.partenaires || [] };
       majEntetePage(page);
@@ -2884,7 +2890,8 @@
 
   // Données dans la langue de la page (voir SITE MULTILINGUE)
   const localises = new Map();   // source -> { brut, promesse }
-  function charger(source) {
+  function charger(source, entree) {
+    if (EXPORT) DEPENDANCES.add(entree !== undefined ? `${source}#${entree}` : source);
     const brut = chargerBrut(source);
     const connu = localises.get(source);
     if (connu && connu.brut === brut) return connu.promesse;
@@ -3192,7 +3199,7 @@
     if (type === "accueil") return (await charger("structure/accueil")).blocs || [];
     const fichier = { page: "structure/pages-creees", personne: "personnes", projet: "projets" }[type];
     if (!fichier) return [];
-    const proprio = (await charger(fichier)).find((o) => o.id === id);
+    const proprio = (await charger(fichier, type === "page" ? id : undefined)).find((o) => o.id === id);
     return (proprio && proprio.blocs) || [];
   }
 
