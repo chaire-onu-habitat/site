@@ -133,13 +133,17 @@
   </url>
   <url>
     <loc>https://chaire-onu-habitat.org/fr/projets/beni-khalled.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chaire-onu-habitat.org/fr/projets/beni-khalled.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chaire-onu-habitat.org/en/projects/beni-khalled.html"/>
   </url>
   <url>
     <loc>https://chaire-onu-habitat.org/fr/projets/iles-kerkennah.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://chaire-onu-habitat.org/fr/projets/theses-de-doctorat.html</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://chaire-onu-habitat.org/fr/projets/jdid.html</loc>
@@ -151,10 +155,6 @@
   </url>
   <url>
     <loc>https://chaire-onu-habitat.org/fr/projets/plateforme-des-odd.html</loc>
-    <lastmod>2026-10-18</lastmod>
-  </url>
-  <url>
-    <loc>https://chaire-onu-habitat.org/fr/projets/theses-de-doctorat.html</loc>
     <lastmod>2026-10-18</lastmod>
   </url>
   <url>
@@ -311,7 +311,7 @@
   </url>
   <url>
     <loc>https://chaire-onu-habitat.org/en/projects/beni-khalled.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chaire-onu-habitat.org/fr/projets/beni-khalled.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chaire-onu-habitat.org/en/projects/beni-khalled.html"/>
   </url>
