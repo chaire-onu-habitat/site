@@ -3,7 +3,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chaire-onu-habitat.org/fr/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chaire-onu-habitat.org/fr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chaire-onu-habitat.org/en/"/>
   </url>
@@ -240,6 +240,10 @@
     <lastmod>2026-10-18</lastmod>
   </url>
   <url>
+    <loc>https://chaire-onu-habitat.org/fr/evenements/enquetes-de-terrain/logement-social-et-handicap-en-tunisie-quelles-perspectives-pour-des-villes-incl.html</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
     <loc>https://chaire-onu-habitat.org/fr/evenements/enquetes-de-terrain/localisation-des-odd-en-tunisie-juin-2025.html</loc>
     <lastmod>2026-10-20</lastmod>
   </url>
@@ -265,7 +269,7 @@
   </url>
   <url>
     <loc>https://chaire-onu-habitat.org/en/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chaire-onu-habitat.org/fr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chaire-onu-habitat.org/en/"/>
   </url>
