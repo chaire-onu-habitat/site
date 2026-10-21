@@ -8,14 +8,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://chaire-onu-habitat.org/en/"/>
   </url>
   <url>
-    <loc>https://chaire-onu-habitat.org/fr/a-propos/gouvernance.html</loc>
-    <lastmod>2026-10-20</lastmod>
-  </url>
-  <url>
     <loc>https://chaire-onu-habitat.org/fr/a-propos/la-chaire.html</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <xhtml:link rel="alternate" hreflang="fr" href="https://chaire-onu-habitat.org/fr/a-propos/la-chaire.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://chaire-onu-habitat.org/en/about/the-un-habitat-chair/about-the-chair.html"/>
+  </url>
+  <url>
+    <loc>https://chaire-onu-habitat.org/fr/a-propos/gouvernance.html</loc>
+    <lastmod>2026-10-20</lastmod>
   </url>
   <url>
     <loc>https://chaire-onu-habitat.org/fr/a-propos/membres-partenaires.html</loc>
