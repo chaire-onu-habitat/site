@@ -583,6 +583,10 @@
   ];
 
 
+  // Élément classé dans l'une des catégories (catégorie principale ou
+  // catégories supplémentaires d'une page : "categories")
+  const dansCategories = (el, ids) => ids.has(el.categorie) || (Array.isArray(el.categories) && el.categories.some((c) => ids.has(c)));
+
   // Texte simple (sans **gras**, *italique*, [liens](…), puces, ### …)
   function texteSansFormat(t) {
     return String(t || "")
@@ -633,7 +637,7 @@
 
   // Article : couverture verticale, catégorie · date, titre
   function carteArticle(item) {
-    const meta = [item.type, formaterDate(item.date)].filter(Boolean).join(" · ");
+    const meta = [item.type ? `<span class="type-publication">${esc(item.type)}</span>` : "", esc(formaterDate(item.date))].filter(Boolean).join(" · ");
     return `
       <article class="pt-article">
         <a class="pt-article__lien" href="${esc(item.lien || "#")}"${cible(item)}>
@@ -804,8 +808,9 @@
   // Construit { idPersonne: { source: [éléments triés] } }
   async function chargerLiensPersonnes(personnes) {
     const noms = [...new Set(GROUPES_PERSONNE.flatMap((g) => g.sources || [g.source]))];
+    const idsPers = personnes.map((p) => p.id).join(",");
     const donnees = new Map(await Promise.all(
-      noms.map((n) => charger(n).then((l) => [n, l], (err) => {
+      noms.map((n) => charger(n, "@personnes:" + idsPers).then((l) => [n, l], (err) => {
         console.warn(`[contenus] data/contenus/${n}.json ignoré pour les portraits :`, err);
         return [n, []];
       }))
@@ -866,7 +871,7 @@
   async function colonnesCategorie(cat) {
     if (cat.sousMenuAuto) {
       const { source, grouperPar } = cat.sousMenuAuto;
-      const elements = (await charger(source)).filter(publie);
+      const elements = (await charger(source, CHAMPS_LIEN)).filter(publie);
       return grouperPar === "pays" ? grouperParPays(elements) : [{ liens: elements }];
     }
     if (Array.isArray(cat.sousMenu) && cat.sousMenu.length) {
@@ -1212,7 +1217,7 @@
     try {
       const [accueil, ...listes] = await Promise.all([
         charger("structure/accueil"),
-        ...SOURCES_CARROUSEL.map((src) => charger(src).catch((err) => {
+        ...SOURCES_CARROUSEL.map((src) => charger(src, false).catch((err) => {
           console.warn(`[contenus] Carrousel : data/contenus/${src}.json ignoré :`, err);
           return [];
         })),
@@ -1241,8 +1246,11 @@
       const refs = reglages.elements || reglages.actualites;
       let slides;
       if (Array.isArray(refs) && refs.length) {
+        const idsRefs = refs.map((r) => (typeof r === "string" ? r : r && r.id)).filter(Boolean).join(",");
+        SOURCES_CARROUSEL.forEach((src) => dependre(src, "#" + idsRefs));
         slides = refs.map(trouver).filter(Boolean);
       } else {
+        dependre("actualites");
         slides = trierParDate([...index.actualites.values()]).slice(0, 3)
           .map((el) => ({ el, source: "actualites" }));
       }
@@ -2082,6 +2090,26 @@
   function majEntetePage(page) {
     const titre = document.getElementById("page-titre");
     if (titre && page.titre && titre.textContent !== page.titre) titre.textContent = page.titre;
+    // Image d'aperçu en tête de la page (réglages de la page) : ajoutée,
+    // changée ou retirée sans attendre que la page soit régénérée
+    const conteneur = titre && titre.closest(".site-section__container");
+    if (!conteneur || page.image === undefined && !conteneur.querySelector(".page-libre__image")) return;
+    let figure = conteneur.querySelector(":scope > .page-libre__image");
+    if (!page.image) { if (figure) figure.remove(); return; }
+    if (!figure) {
+      figure = document.createElement("figure");
+      figure.className = "page-libre__image";
+      figure.append(document.createElement("img"));
+      conteneur.append(figure);
+    }
+    const img = figure.querySelector("img");
+    const src = url(page.image);
+    if (img.getAttribute("src") !== src) img.setAttribute("src", src);
+    img.alt = altDe(page, "");
+    const legende = page.imageLegende === true && img.alt;
+    let cap = figure.querySelector("figcaption");
+    if (legende) { if (!cap) { cap = document.createElement("figcaption"); cap.className = "legende"; figure.append(cap); } cap.textContent = img.alt; }
+    else if (cap) cap.remove();
   }
 
   async function preparerPageCreee() {
@@ -2089,7 +2117,7 @@
     const [type, id] = String((meta && meta.content) || "").split(":");
     if (type !== "page" || !id) return;
     try {
-      const page = (await charger("structure/pages-creees", id)).find((o) => o.id === id);
+      const page = (await charger("structure/pages-creees", "#" + id)).find((o) => o.id === id);
       if (!page) return;
       PAGE_COURANTE ||= { personnes: page.personnes || [], projets: page.projets || [], partenaires: page.partenaires || [] };
       majEntetePage(page);
@@ -2310,18 +2338,21 @@
   async function construireProjet(zone) {
     const id = zone.dataset.projet;
     try {
+      const selLie = "@projets:" + id;
       const [projets, publications, personnes, partenaires, actualites, evenements] = await Promise.all([
-        charger("projets"),
-        charger("publications").catch(() => []),
-        charger("personnes").catch(() => []),
-        charger("partenaires").catch((err) => {
+        charger("projets", "#" + id),
+        charger("publications", selLie).catch(() => []),
+        charger("personnes", false).catch(() => []),
+        charger("partenaires", false).catch((err) => {
           console.warn("[contenus] Projet : data/contenus/partenaires.json illisible :", err);
           return {};
         }),
-        charger("actualites").catch(() => []),
-        charger("evenements").catch(() => []),
+        charger("actualites", selLie).catch(() => []),
+        charger("evenements", selLie).catch(() => []),
         chargerCategories(),
       ]);
+      dependre("personnes", "#" + (Array.isArray((projets.find((p) => p.id === id) || {}).personnes) ? projets.find((p) => p.id === id).personnes.join(",") : ""));
+      dependre("partenaires", "#" + (Array.isArray((projets.find((p) => p.id === id) || {}).partenaires) ? projets.find((p) => p.id === id).partenaires.join(",") : ""));
 
       const tous = projets.filter(publie);
       const projet = tous.find((pr) => pr.id === id);
@@ -2417,7 +2448,7 @@
   async function construirePersonne(zone) {
     const ids = String(zone.dataset.personne || "").split(",").map((t) => t.trim()).filter(Boolean);
     try {
-      const [personnes] = await Promise.all([charger("personnes"), chargerCategories()]);
+      const [personnes] = await Promise.all([charger("personnes", "#" + ids.join(",")), chargerCategories()]);
       const parId = new Map(personnes.filter(publie).map((p) => [p.id, p]));
       const choisies = ids.map((id) => {
         if (!parId.has(id)) console.error(`[contenus] Personne : "${id}" introuvable dans data/contenus/personnes.json`);
@@ -2458,9 +2489,13 @@
   async function construirePartenaires(zone) {
     const filtre = String(zone.dataset.partenaires || "").split(",").map((t) => t.trim()).filter(Boolean);
     try {
+      const choixDep = String(zone.dataset.membres || "").trim();
       const [donnees, personnes] = await Promise.all([
         charger("partenaires"),
-        charger("personnes").catch(() => []),
+        // Membres : les personnes choisies, sinon les champs des pastilles de toutes
+        choixDep === "aucun" ? Promise.resolve([])
+          : charger("personnes", choixDep ? "#" + choixDep.split(",").map((x) => x.trim()).join(",")
+            : "~id,nom,image,imageAlt,fonction,lien,publie,nouvelOnglet,langue,traductions.nom,traductions.fonction,traductions.lien,@image1").catch(() => []),
         chargerCategories(),
       ]);
       const categories = (Array.isArray(donnees.categories) ? donnees.categories : [])
@@ -2533,7 +2568,7 @@
   // Carte horizontale : image, catégorie (ou type) · date, titre, extrait
   function carteListe(item) {
     const estPublication = item._source === "publications";
-    const meta = [estPublication ? item.type : titreCategorie(item.categorie), formaterDate(item.date)]
+    const meta = [estPublication ? (item.type ? `<span class="type-publication">${esc(item.type)}</span>` : "") : esc(titreCategorie(item.categorie)), esc(formaterDate(item.date))]
       .filter(Boolean).join(" · ");
     const desc = resumeDe(item);
     return `
@@ -2543,7 +2578,7 @@
             ${imageCarte(item)}
           </div>
           <div class="liste-cat__corps">
-            ${meta ? `<span class="pt-meta">${esc(meta)}</span>` : ""}
+            ${meta ? `<span class="pt-meta">${meta}</span>` : ""}
             <h3 class="liste-cat__titre">${esc(item.titre)}</h3>
             ${item.auteurs ? `<p class="liste-cat__auteurs">${esc(item.auteurs)}</p>` : ""}
             ${desc ? `<p class="liste-cat__desc">${esc(desc)}</p>` : ""}
@@ -2561,7 +2596,7 @@
     try {
       const [nav, ...reste] = await Promise.all([
         charger("structure/navigation"),
-        ...sources.map((src) => charger(src).catch((err) => {
+        ...sources.map((src) => charger(src, false).catch((err) => {
           console.warn(`[contenus] Catégorie : data/contenus/${src}.json ignoré :`, err);
           return [];
         })),
@@ -2577,9 +2612,10 @@
         console.warn(`[contenus] Catégorie : "${idCat}" introuvable dans data/structure/navigation.json`);
       }
 
+      sources.forEach((src) => dependre(src, "@categorie:" + [...ids].join(",")));
       const elements = trierParDate(sources.flatMap((src, i) =>
         (Array.isArray(listes[i]) ? listes[i] : [])
-          .filter((el) => publie(el) && ids.has(el.categorie))
+          .filter((el) => publie(el) && dansCategories(el, ids))
           .map((el) => ({ ...el, _source: src }))
       ));
 
@@ -2649,9 +2685,9 @@
     const ids = (attr) => (zone.dataset[attr] || "").split(",").map((t) => t.trim()).filter(Boolean);
     try {
       const [personnes, projets, partenaires] = await Promise.all([
-        charger("personnes").catch(() => []),
-        charger("projets").catch(() => []),
-        charger("partenaires").catch(() => ({})),
+        charger("personnes", "#" + ids("liensPersonnes").join(",")).catch(() => []),
+        charger("projets", "#" + ids("liensProjets").join(",")).catch(() => []),
+        charger("partenaires", "#" + ids("liensPartenaires").join(",")).catch(() => ({})),
       ]);
       const choisir = (liste, voulus) => {
         const parId = new Map(liste.filter(publie).map((o) => [o.id, o]));
@@ -2749,9 +2785,9 @@
     try {
       const [projets, personnes, publications, actualites] = await Promise.all([
         charger("projets"),
-        charger("personnes").catch(() => []),
-        charger("publications").catch(() => []),
-        charger("actualites").catch(() => []),
+        charger("personnes", CHAMPS_LIEN).catch(() => []),
+        charger("publications", "~id,projets,publie").catch(() => []),
+        charger("actualites", "~id,projets,publie,groupe,langue,traductions.titre").catch(() => []),
         chargerCategories(),
       ]);
 
@@ -2890,8 +2926,16 @@
 
   // Données dans la langue de la page (voir SITE MULTILINGUE)
   const localises = new Map();   // source -> { brut, promesse }
-  function charger(source, entree) {
-    if (EXPORT) DEPENDANCES.add(entree !== undefined ? `${source}#${entree}` : source);
+  // sel : partie des données dont dépend la page (export statique) :
+  //   "#id1,id2" ces éléments ; "@champ:v1,v2" les éléments dont le champ
+  //   contient l'une des valeurs ; "~champ1,champ2" ces champs de tous les
+  //   éléments ; false : rien (dependre() est appelé ensuite) ; absent : tout
+  function dependre(source, sel) {
+    if (EXPORT) DEPENDANCES.add(sel ? `${source}|${sel}` : source);
+  }
+  const CHAMPS_LIEN = "~id,titre,nom,lien,slug,categorie,groupe,pays,publie,nouvelOnglet,langue,traductions.titre,traductions.nom,traductions.slug,traductions.lien";
+  function charger(source, sel) {
+    if (sel !== false) dependre(source, sel);
     const brut = chargerBrut(source);
     const connu = localises.get(source);
     if (connu && connu.brut === brut) return connu.promesse;
@@ -3171,15 +3215,16 @@
     const ids = (attr) => (zone.dataset[attr] || "").split(",").map((t) => t.trim()).filter(Boolean);
     try {
       const sources = source === "fil" ? ["actualites", "evenements"] : [source];
+      const projets = ids("listeProjets"), personnes = ids("listePersonnes"), categorie = zone.dataset.listeCategorie;
+      const selListe = projets.length ? "@projets:" + projets.join(",") : personnes.length ? "@personnes:" + personnes.join(",") : categorie ? "@categorie:" + categorie : undefined;
       const [listes] = await Promise.all([
-        Promise.all(sources.map((s) => charger(s).catch(() => []))),
+        Promise.all(sources.map((s) => charger(s, selListe).catch(() => []))),
         chargerCategories(),
       ]);
-      const projets = ids("listeProjets"), personnes = ids("listePersonnes"), categorie = zone.dataset.listeCategorie;
       const elements = trierParDate(listes.flat().filter((el) => publie(el) && dansFil(el)
         && (!projets.length || (el.projets || []).some((id) => projets.includes(id)))
         && (!personnes.length || (el.personnes || []).some((id) => personnes.includes(id)))
-        && (!categorie || el.categorie === categorie)));
+        && (!categorie || dansCategories(el, new Set([categorie])))));
       const pas = limiteDe(zone.dataset.limit, 6);
       const carte = source === "publications" ? carteArticle : carteFil;
       const classe = source === "publications" ? "pt-grille--publications" : "pt-grille--actualites";
@@ -3199,7 +3244,7 @@
     if (type === "accueil") return (await charger("structure/accueil")).blocs || [];
     const fichier = { page: "structure/pages-creees", personne: "personnes", projet: "projets" }[type];
     if (!fichier) return [];
-    const proprio = (await charger(fichier, type === "page" ? id : undefined)).find((o) => o.id === id);
+    const proprio = (await charger(fichier, "#" + id)).find((o) => o.id === id);
     return (proprio && proprio.blocs) || [];
   }
 
@@ -3263,6 +3308,8 @@
     accepter: (el, bloc, edition = true) => CLES_BLOCS.set(el, cleBloc(bloc, edition)),
     // Langue de la page affichée (site multilingue)
     langue: () => LANGUE,
+    // En-tête d'une page créée (titre, image d'aperçu) avec les réglages en cours
+    entete: (page) => majEntetePage(page || {}),
     // Texte alternatif / légende modifié dans le gestionnaire (avant enregistrement)
     alt: (chemin, texte) => {
       const c = cheminImage(chemin);

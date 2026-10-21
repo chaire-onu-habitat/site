@@ -5372,3 +5372,11 @@ body.pdf-sans-defilement { overflow: hidden; }
 .bloc:is(.bloc--video, .bloc--son) + .isci-ajout + .bloc--titre > .site-section:not(.bloc--gris):not(.site-section--dark) {
   padding-top: 24px;
 }
+
+/* Type d'une publication (article, rapport…) : toujours affiché en majuscules,
+   quelle que soit la façon dont il est saisi */
+.publication-category,
+.type-publication {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
